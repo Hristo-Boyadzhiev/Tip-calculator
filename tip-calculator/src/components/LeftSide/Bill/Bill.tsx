@@ -19,12 +19,14 @@ export default function Bill() {
       }}
     >
       <Typography variant="h6">Bill</Typography>
-      <Box sx={{ dislay: "flex" }}>
-        <Currency
-          handleCurrency={handleCurrency}
-          currentCurrency={currentCurrency}
-        />
-        <BillValue currency={currentCurrency} />
+      <Box>
+        <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <Currency
+            handleCurrency={handleCurrency}
+            currentCurrency={currentCurrency}
+          />
+          <BillValue currency={currentCurrency} />
+        </Box>
       </Box>
     </Box>
   );
