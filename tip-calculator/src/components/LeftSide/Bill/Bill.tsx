@@ -1,4 +1,4 @@
-import { Box, SelectChangeEvent, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Currency from "./Currency";
 import BillValue from "./BillValue";
 import React from "react";
@@ -6,8 +6,8 @@ import React from "react";
 export default function Bill() {
   const [currentCurrency, setCurrentCurrency] = React.useState<string>("");
 
-  const handleCurrency = (event: SelectChangeEvent) => {
-    setCurrentCurrency(event.target.value);
+  const handleCurrency = (currency: string) => {
+    setCurrentCurrency(currency);
   };
 
   return (
@@ -21,10 +21,7 @@ export default function Bill() {
       <Typography variant="h6">Bill</Typography>
       <Box>
         <Box sx={{ display: "flex", justifyContent: "center" }}>
-          <Currency
-            handleCurrency={handleCurrency}
-            currentCurrency={currentCurrency}
-          />
+          <Currency handleCurrency={handleCurrency} />
           <BillValue currency={currentCurrency} />
         </Box>
       </Box>
