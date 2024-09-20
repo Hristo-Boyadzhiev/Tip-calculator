@@ -19,6 +19,9 @@ export default function BillValue({ currency }: BillValueProps) {
         startAdornment={
           <InputAdornment position="start">{currencySymbol}</InputAdornment>
         }
+        inputProps={{
+          style: { textAlign: "right" },
+        }}
         label="Amount"
       />
     </FormControl>
