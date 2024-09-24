@@ -1,7 +1,10 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
+import { useTipContext } from "../../hooks/useTipContext";
+import getCurrencySymbol from "../../utils/getCurrencySymbol";
 
 export default function RightSide() {
-  //TODO най-вероятно валутата трябва да я пазя в context, за да имам достъп до нея и тук
+  const { currentCurrency, tipPerPerson, totalPerPerson } = useTipContext();
+  const currencySymbol = getCurrencySymbol(currentCurrency);
   return (
     <Box
       sx={{
@@ -29,10 +32,12 @@ export default function RightSide() {
           }}
         >
           <Box>
-            <Typography sx={{ color: "white" }}>Type Amount</Typography>
+            <Typography sx={{ color: "white" }}>Tip Amount</Typography>
             <Typography sx={{ color: "white" }}>/ Person</Typography>
           </Box>
-          <Typography>$Proba</Typography>
+          <Typography>
+            {tipPerPerson} {currencySymbol}
+          </Typography>
         </Box>
 
         <Box
@@ -46,10 +51,11 @@ export default function RightSide() {
             <Typography sx={{ color: "white" }}>Total</Typography>
             <Typography sx={{ color: "white" }}>/ Person</Typography>
           </Box>
-          <Typography>$Proba</Typography>
+          <Typography>
+            {totalPerPerson} {currencySymbol}
+          </Typography>
         </Box>
       </Box>
-      <Button variant="contained">reset</Button>
     </Box>
   );
 }

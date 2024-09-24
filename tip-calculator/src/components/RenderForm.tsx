@@ -1,14 +1,14 @@
 import { Box } from "@mui/material";
 import LeftSide from "./LeftSide/LeftSide";
 import RightSide from "./RightSide/RightSide";
+import { useTipContext } from "../hooks/useTipContext";
 
 export default function RenderForm() {
+  const { isShowRightSide } = useTipContext();
   return (
     <Box
       sx={{
         display: "flex",
-        width: 1000,
-        height: 500,
         background: "white",
         borderRadius: "1.5em",
       }}
@@ -22,7 +22,7 @@ export default function RenderForm() {
         }}
       >
         <LeftSide />
-        <RightSide />
+        {isShowRightSide && <RightSide />}
       </Box>
     </Box>
   );

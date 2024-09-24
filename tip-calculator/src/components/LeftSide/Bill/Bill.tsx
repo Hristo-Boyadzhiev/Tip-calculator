@@ -1,28 +1,31 @@
 import { Box, Typography } from "@mui/material";
 import Currency from "./Currency";
-import React from "react";
 import BillAmount from "./BillAmount";
+import { useTipContext } from "../../../hooks/useTipContext";
 
 export default function Bill() {
-  const [currentCurrency, setCurrentCurrency] = React.useState<string>("");
-
-  const handleCurrency = (currency: string) => {
-    setCurrentCurrency(currency);
-  };
+  const { currentCurrency } = useTipContext();
 
   return (
     <Box
       sx={{
         display: "flex",
         flexDirection: "column",
-        gap: "1em",
+        gap: "0.5em",
       }}
     >
       <Typography variant="h6">Bill</Typography>
       <Box>
-        <Box sx={{ display: "flex", justifyContent: "center" }}>
-          <Currency handleCurrency={handleCurrency} />
-          <BillAmount currency={currentCurrency} />
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "flex-end",
+            gap: "2em",
+          }}
+        >
+          <Currency />
+          {currentCurrency && <BillAmount />}
         </Box>
       </Box>
     </Box>

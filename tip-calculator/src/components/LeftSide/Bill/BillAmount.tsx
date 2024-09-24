@@ -4,12 +4,9 @@ import getCurrencySymbol from "../../../utils/getCurrencySymbol";
 import { Controller, useFormContext } from "react-hook-form";
 import FormHelperText from "@mui/material/FormHelperText";
 import React from "react";
+import { useTipContext } from "../../../hooks/useTipContext";
 
-interface BillValueProps {
-  currency: string;
-}
-
-export default function BillAmount({ currency }: BillValueProps) {
+export default function BillAmount() {
   const {
     control,
     formState: { errors },
@@ -17,13 +14,17 @@ export default function BillAmount({ currency }: BillValueProps) {
     clearErrors,
   } = useFormContext();
 
-  const currencySymbol = getCurrencySymbol(currency);
+  const { currentCurrency } = useTipContext();
+
+  const currencySymbol = getCurrencySymbol(currentCurrency);
 
   React.useEffect(() => {
-    setError("billAmount", {
-      type: "manual",
-      message: `Bill amount must be at least 1${currencySymbol}`,
-    });
+    if (!!errors.billAmount) {
+      setError("billAmount", {
+        type: "manual",
+        message: `Bill amount must be at least 1${currencySymbol}`,
+      });
+    }
   }, [currencySymbol]);
 
   return (

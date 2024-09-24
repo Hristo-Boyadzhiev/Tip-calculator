@@ -19,7 +19,7 @@ export default function NumberOfPeople() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        gap: "1em",
+        gap: "0.5em",
       }}
     >
       <Typography variant="h6">Number of people</Typography>

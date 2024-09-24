@@ -5,17 +5,17 @@ import Select from "@mui/material/Select";
 import FormHelperText from "@mui/material/FormHelperText";
 import getCurrencies from "../../../utils/getCurrencies";
 import { Controller, useFormContext } from "react-hook-form";
+import { useTipContext } from "../../../hooks/useTipContext";
 
-interface CurrencyProps {
-  handleCurrency: (currency: string) => void;
-}
-
-export default function Currency({ handleCurrency }: CurrencyProps) {
-  const currencies = getCurrencies();
+export default function Currency() {
   const {
     control,
     formState: { errors },
   } = useFormContext();
+
+  const { setCurrentCurrency } = useTipContext();
+
+  const currencies = getCurrencies();
 
   return (
     <Controller
@@ -24,19 +24,19 @@ export default function Currency({ handleCurrency }: CurrencyProps) {
       defaultValue=""
       render={({ field }) => (
         <FormControl
+          variant="standard"
           sx={{ minWidth: 120 }}
-          size="small"
           error={!!errors.currency}
         >
-          <InputLabel id="demo-select-small-label">Currency</InputLabel>
+          <InputLabel id="currency-select-label">Currency</InputLabel>
           <Select
+            labelId="currency-select-label"
+            id="currency-select"
+            size="small"
             {...field}
-            labelId="demo-select-small-label"
-            id="demo-select-small"
-            label="Currency"
             onChange={(event) => {
               const currency = event.target.value;
-              handleCurrency(currency);
+              setCurrentCurrency(currency);
               field.onChange(currency);
             }}
           >
@@ -46,11 +46,13 @@ export default function Currency({ handleCurrency }: CurrencyProps) {
               </MenuItem>
             ))}
           </Select>
-          <FormHelperText>
-            {typeof errors.currency?.message === "string"
-              ? errors.currency.message
-              : ""}
-          </FormHelperText>
+          {errors.currency?.message && (
+            <FormHelperText>
+              {typeof errors.currency.message === "string"
+                ? errors.currency.message
+                : ""}
+            </FormHelperText>
+          )}
         </FormControl>
       )}
     />
