@@ -10,7 +10,7 @@ interface BillValueProps {
   currency: string;
 }
 
-export default function BillValue({ currency }: BillValueProps) {
+export default function BillAmount({ currency }: BillValueProps) {
   const currencySymbol = getCurrencySymbol(currency);
   const {
     control,
@@ -25,7 +25,7 @@ export default function BillValue({ currency }: BillValueProps) {
     >
       <InputLabel htmlFor="outlined-adornment-amount">Amount</InputLabel>
       <Controller
-        name="billValue"
+        name="billAmount"
         control={control}
         defaultValue=""
         render={({ field }) => (

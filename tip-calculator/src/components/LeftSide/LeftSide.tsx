@@ -1,7 +1,7 @@
 import { Box, Button } from "@mui/material";
 import Bill from "./Bill/Bill";
 import NumberOfPeople from "./NumberOfPeople/NumberOfPeople";
-import SelectType from "./SelectType/SelectType";
+import TipPercentage from "./TipPercentage/TipPercentage";
 
 export default function LeftSide() {
   return (
@@ -17,7 +17,7 @@ export default function LeftSide() {
       }}
     >
       <Bill />
-      <SelectType />
+      <TipPercentage />
       <NumberOfPeople />
       <Button
         type="submit"

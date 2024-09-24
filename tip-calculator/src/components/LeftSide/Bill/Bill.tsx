@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import Currency from "./Currency";
-import BillValue from "./BillValue";
 import React from "react";
+import BillAmount from "./BillAmount";
 
 export default function Bill() {
   const [currentCurrency, setCurrentCurrency] = React.useState<string>("");
@@ -22,7 +22,7 @@ export default function Bill() {
       <Box>
         <Box sx={{ display: "flex", justifyContent: "center" }}>
           <Currency handleCurrency={handleCurrency} />
-          <BillValue currency={currentCurrency} />
+          <BillAmount currency={currentCurrency} />
         </Box>
       </Box>
     </Box>

@@ -1,12 +1,15 @@
-import { Box, FormHelperText, Typography } from "@mui/material";
-
-import Input from "@mui/material/Input";
-import InputAdornment from "@mui/material/InputAdornment";
-import FormControl from "@mui/material/FormControl";
-import PersonIcon from "@mui/icons-material/Person";
+import {
+  Box,
+  FormControl,
+  Input,
+  InputAdornment,
+  Typography,
+  FormHelperText,
+} from "@mui/material";
+import PercentIcon from "@mui/icons-material/Percent";
 import { Controller, useFormContext } from "react-hook-form";
 
-export default function NumberOfPeople() {
+export default function TipPercentage() {
   const {
     control,
     formState: { errors },
@@ -22,13 +25,13 @@ export default function NumberOfPeople() {
         gap: "1em",
       }}
     >
-      <Typography variant="h6">Number of people</Typography>
+      <Typography variant="h6">Tip Percentage (%)</Typography>
       <Controller
-        name="numberOfPeople"
+        name="tipPercentage"
         control={control}
         defaultValue=""
         render={({ field: { onChange, onBlur, value, ref } }) => (
-          <FormControl variant="standard" error={!!errors.numberOfPeople}>
+          <FormControl variant="standard" error={!!errors.tipPercentage}>
             <Input
               id="input-with-icon-adornment"
               type="number"
@@ -39,29 +42,29 @@ export default function NumberOfPeople() {
               }}
               startAdornment={
                 <InputAdornment position="start">
-                  <PersonIcon />
+                  <PercentIcon />
                 </InputAdornment>
               }
               onChange={(e) => {
                 const numValue = Number(e.target.value);
                 onChange(e);
                 if (isNaN(numValue) || numValue < 1) {
-                  setError("numberOfPeople", {
+                  setError("tipPercentage", {
                     type: "manual",
-                    message: "Number of people must be at least 1%.",
+                    message: "Tip percentage must be at least 1%",
                   });
                 } else {
-                  clearErrors("numberOfPeople");
+                  clearErrors("tipPercentage");
                 }
               }}
               onBlur={onBlur}
               value={value}
               inputRef={ref}
             />
-            {errors.numberOfPeople?.message && (
+            {errors.tipPercentage?.message && (
               <FormHelperText>
-                {typeof errors.numberOfPeople.message === "string"
-                  ? errors.numberOfPeople.message
+                {typeof errors.tipPercentage.message === "string"
+                  ? errors.tipPercentage.message
                   : ""}
               </FormHelperText>
             )}
