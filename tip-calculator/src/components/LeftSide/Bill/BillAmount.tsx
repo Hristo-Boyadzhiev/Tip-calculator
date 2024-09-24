@@ -1,54 +1,74 @@
-import OutlinedInput from "@mui/material/OutlinedInput";
-import InputLabel from "@mui/material/InputLabel";
 import InputAdornment from "@mui/material/InputAdornment";
-import { FormControl } from "@mui/material";
+import { FormControl, Input } from "@mui/material";
 import getCurrencySymbol from "../../../utils/getCurrencySymbol";
 import { Controller, useFormContext } from "react-hook-form";
 import FormHelperText from "@mui/material/FormHelperText";
+import React from "react";
 
 interface BillValueProps {
   currency: string;
 }
 
 export default function BillAmount({ currency }: BillValueProps) {
-  const currencySymbol = getCurrencySymbol(currency);
   const {
     control,
     formState: { errors },
+    setError,
+    clearErrors,
   } = useFormContext();
 
+  const currencySymbol = getCurrencySymbol(currency);
+
+  React.useEffect(() => {
+    setError("billAmount", {
+      type: "manual",
+      message: `Bill amount must be at least 1${currencySymbol}`,
+    });
+  }, [currencySymbol]);
+
   return (
-    <FormControl
-      size="small"
-      sx={{ marginLeft: "2em" }}
-      error={!!errors.billValue}
-    >
-      <InputLabel htmlFor="outlined-adornment-amount">Amount</InputLabel>
-      <Controller
-        name="billAmount"
-        control={control}
-        defaultValue=""
-        render={({ field }) => (
-          <OutlinedInput
-            {...field}
-            id="outlined-adornment-amount"
+    <Controller
+      name="billAmount"
+      control={control}
+      defaultValue=""
+      render={({ field: { onChange, onBlur, value, ref } }) => (
+        <FormControl variant="standard" error={!!errors.billAmount}>
+          <Input
+            id="input-with-icon-adornment"
+            type="number"
+            inputProps={{
+              style: { textAlign: "right" },
+              step: 1,
+              min: 1,
+            }}
             startAdornment={
               <InputAdornment position="start">{currencySymbol}</InputAdornment>
             }
-            inputProps={{
-              style: { textAlign: "right" },
+            onChange={(e) => {
+              const numValue = Number(e.target.value);
+              onChange(e);
+              if (isNaN(numValue) || numValue < 1) {
+                setError("billAmount", {
+                  type: "manual",
+                  message: `Bill amount must be at least 1${currencySymbol}`,
+                });
+              } else {
+                clearErrors("billAmount");
+              }
             }}
-            label="Amount"
+            onBlur={onBlur}
+            value={value}
+            inputRef={ref}
           />
-        )}
-      />
-      {errors.billValue && (
-        <FormHelperText>
-          {typeof errors.billValue.message === "string"
-            ? errors.billValue.message
-            : ""}
-        </FormHelperText>
+          {errors.billAmount?.message && (
+            <FormHelperText>
+              {typeof errors.billAmount.message === "string"
+                ? errors.billAmount.message
+                : ""}
+            </FormHelperText>
+          )}
+        </FormControl>
       )}
-    </FormControl>
+    />
   );
 }
