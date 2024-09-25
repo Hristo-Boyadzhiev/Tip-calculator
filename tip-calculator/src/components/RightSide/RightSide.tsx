@@ -1,10 +1,13 @@
 import { Box, Typography } from "@mui/material";
 import { useTipContext } from "../../hooks/useTipContext";
 import getCurrencySymbol from "../../utils/getCurrencySymbol";
+import { useThemeContext } from "../../hooks/useThemeContext";
 
 export default function RightSide() {
   const { currentCurrency, tipPerPerson, totalPerPerson } = useTipContext();
   const currencySymbol = getCurrencySymbol(currentCurrency);
+  const { mode } = useThemeContext();
+
   return (
     <Box
       sx={{
@@ -35,7 +38,12 @@ export default function RightSide() {
             <Typography sx={{ color: "secondary.main" }}>Tip Amount</Typography>
             <Typography sx={{ color: "primary.800" }}>/ Person</Typography>
           </Box>
-          <Typography sx={{ color: "primary.700", fontSize: "1.5em" }}>
+          <Typography
+            sx={{
+              color: mode === "light" ? "primary.700" : "primary.900",
+              fontSize: "1.5em",
+            }}
+          >
             {tipPerPerson} {currencySymbol}
           </Typography>
         </Box>
@@ -51,7 +59,12 @@ export default function RightSide() {
             <Typography sx={{ color: "secondary.main" }}>Total</Typography>
             <Typography sx={{ color: "primary.800" }}>/ Person</Typography>
           </Box>
-          <Typography sx={{ color: "primary.700", fontSize: "1.5em" }}>
+          <Typography
+            sx={{
+              color: mode === "light" ? "primary.700" : "primary.900",
+              fontSize: "1.5em",
+            }}
+          >
             {totalPerPerson} {currencySymbol}
           </Typography>
         </Box>

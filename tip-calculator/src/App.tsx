@@ -1,18 +1,15 @@
 import TipCalculator from "./components/TipCalculator";
 import { TipProvider } from "./contexts/TipContext";
-import { ThemeProvider } from "@mui/material/styles";
-import { light } from "./plugins/muiTheme";
 import { CssBaseline } from "@mui/material";
-import { GlobalStyle } from "./GlobalStyle";
+import ToggleColorMode from "./contexts/Theme";
 
 export default function App() {
   return (
-    <ThemeProvider theme={light}>
+    <ToggleColorMode>
       <CssBaseline />
-      <GlobalStyle />
       <TipProvider>
-        <TipCalculator />;
+        <TipCalculator />
       </TipProvider>
-    </ThemeProvider>
+    </ToggleColorMode>
   );
 }

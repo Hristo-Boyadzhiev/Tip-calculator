@@ -1,5 +1,5 @@
 import React from "react";
-import { TipContext } from "../contexts/TipContext"; // Уверете се, че пътят е правилен
+import { TipContext } from "../contexts/TipContext";
 
 export const useTipContext = () => {
   const context = React.useContext(TipContext);
