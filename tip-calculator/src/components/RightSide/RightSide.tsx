@@ -14,7 +14,7 @@ export default function RightSide() {
         flex: 1,
         borderRadius: "1.5em",
         padding: "1em",
-        backgroundColor: "hsl(183, 100%, 15%)",
+        backgroundColor: "primary.main",
       }}
     >
       <Box
@@ -32,10 +32,10 @@ export default function RightSide() {
           }}
         >
           <Box>
-            <Typography sx={{ color: "white" }}>Tip Amount</Typography>
-            <Typography sx={{ color: "white" }}>/ Person</Typography>
+            <Typography sx={{ color: "secondary.main" }}>Tip Amount</Typography>
+            <Typography sx={{ color: "primary.800" }}>/ Person</Typography>
           </Box>
-          <Typography>
+          <Typography sx={{ color: "primary.700", fontSize: "1.5em" }}>
             {tipPerPerson} {currencySymbol}
           </Typography>
         </Box>
@@ -48,10 +48,10 @@ export default function RightSide() {
           }}
         >
           <Box>
-            <Typography sx={{ color: "white" }}>Total</Typography>
-            <Typography sx={{ color: "white" }}>/ Person</Typography>
+            <Typography sx={{ color: "secondary.main" }}>Total</Typography>
+            <Typography sx={{ color: "primary.800" }}>/ Person</Typography>
           </Box>
-          <Typography>
+          <Typography sx={{ color: "primary.700", fontSize: "1.5em" }}>
             {totalPerPerson} {currencySymbol}
           </Typography>
         </Box>
