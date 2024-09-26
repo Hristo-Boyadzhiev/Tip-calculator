@@ -3,9 +3,15 @@ import LeftSide from "./LeftSide/LeftSide";
 import RightSide from "./RightSide/RightSide";
 import { useTipContext } from "../hooks/useTipContext";
 import ChangeMode from "./LeftSide/Mode/ChangeMode";
+import bulgarian_flag from "../assets/bulgaria-flag-icon.png";
 
 export default function RenderForm() {
   const { isShowRightSide } = useTipContext();
+
+  function handleLanguageSwitch() {
+    console.log("clicked");
+  }
+
   return (
     <Box
       sx={{
@@ -24,7 +30,18 @@ export default function RenderForm() {
         }}
       >
         <ChangeMode />
-        {/* Add flags to change the language */}
+        <Box
+          component="img"
+          src={bulgarian_flag}
+          alt="bulgarian_flag"
+          sx={{
+            width: "35px",
+            height: "auto",
+            marginRight: "1.5em",
+            boxShadow: "0px 0px 8px 0px #00000040",
+          }}
+          onClick={handleLanguageSwitch}
+        />
       </Box>
       <Box
         sx={{
@@ -40,35 +57,3 @@ export default function RenderForm() {
     </Box>
   );
 }
-
-// import { Box } from "@mui/material";
-// import LeftSide from "./LeftSide/LeftSide";
-// import RightSide from "./RightSide/RightSide";
-// import { useTipContext } from "../hooks/useTipContext";
-// // import ChangeMode from "./LeftSide/Mode/ChangeMode";
-
-// export default function RenderForm() {
-//   const { isShowRightSide } = useTipContext();
-//   return (
-//     <Box
-//       sx={{
-//         display: "flex",
-//         backgroundColor: "secondary.main",
-//         borderRadius: "1.5em",
-//       }}
-//     >
-//       {/* <ChangeMode /> */}
-//       <Box
-//         sx={{
-//           display: "flex",
-//           gap: "2em",
-//           margin: "2em",
-//           flex: 1,
-//         }}
-//       >
-//         <LeftSide />
-//         {isShowRightSide && <RightSide />}
-//       </Box>
-//     </Box>
-//   );
-// }

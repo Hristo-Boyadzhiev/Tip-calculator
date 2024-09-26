@@ -8,13 +8,13 @@ import {
 } from "@mui/material";
 import PercentIcon from "@mui/icons-material/Percent";
 import { Controller, useFormContext } from "react-hook-form";
+import { useTranslation } from "react-i18next";
 
 export default function TipPercentage() {
+  const { t: translate } = useTranslation();
   const {
     control,
     formState: { errors },
-    setError,
-    clearErrors,
   } = useFormContext();
 
   return (
@@ -25,7 +25,7 @@ export default function TipPercentage() {
         gap: "0.5em",
       }}
     >
-      <Typography variant="h6">Tip Percentage (%)</Typography>
+      <Typography variant="h6">{translate("tip-percentage")}</Typography>
       <Controller
         name="tipPercentage"
         control={control}
@@ -38,25 +38,13 @@ export default function TipPercentage() {
               inputProps={{
                 style: { textAlign: "right" },
                 step: 1,
-                min: 1,
               }}
               startAdornment={
                 <InputAdornment position="start">
                   <PercentIcon />
                 </InputAdornment>
               }
-              onChange={(e) => {
-                const numValue = Number(e.target.value);
-                onChange(e);
-                if (isNaN(numValue) || numValue < 1) {
-                  setError("tipPercentage", {
-                    type: "manual",
-                    message: "Tip percentage must be at least 1%",
-                  });
-                } else {
-                  clearErrors("tipPercentage");
-                }
-              }}
+              onChange={onChange}
               onBlur={onBlur}
               value={value}
               inputRef={ref}
@@ -64,7 +52,7 @@ export default function TipPercentage() {
             {errors.tipPercentage?.message && (
               <FormHelperText>
                 {typeof errors.tipPercentage.message === "string"
-                  ? errors.tipPercentage.message
+                  ? translate(errors.tipPercentage.message)
                   : ""}
               </FormHelperText>
             )}

@@ -2,8 +2,10 @@ import { Box, Typography } from "@mui/material";
 import { useTipContext } from "../../hooks/useTipContext";
 import getCurrencySymbol from "../../utils/getCurrencySymbol";
 import { useThemeContext } from "../../hooks/useThemeContext";
+import { useTranslation } from "react-i18next";
 
 export default function RightSide() {
+  const { t: translate } = useTranslation();
   const { currentCurrency, tipPerPerson, totalPerPerson } = useTipContext();
   const currencySymbol = getCurrencySymbol(currentCurrency);
   const { mode } = useThemeContext();
@@ -13,7 +15,6 @@ export default function RightSide() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        justifyContent: "space-between",
         flex: 1,
         borderRadius: "1.5em",
         padding: "1em",
@@ -35,8 +36,12 @@ export default function RightSide() {
           }}
         >
           <Box>
-            <Typography sx={{ color: "secondary.main" }}>Tip Amount</Typography>
-            <Typography sx={{ color: "primary.800" }}>/ Person</Typography>
+            <Typography sx={{ color: "secondary.main" }}>
+              {translate("tip-amount")}
+            </Typography>
+            <Typography sx={{ color: "primary.800" }}>
+              {translate("person")}
+            </Typography>
           </Box>
           <Typography
             sx={{
@@ -56,8 +61,12 @@ export default function RightSide() {
           }}
         >
           <Box>
-            <Typography sx={{ color: "secondary.main" }}>Total</Typography>
-            <Typography sx={{ color: "primary.800" }}>/ Person</Typography>
+            <Typography sx={{ color: "secondary.main" }}>
+              {translate("total")}
+            </Typography>
+            <Typography sx={{ color: "primary.800" }}>
+              {translate("person")}
+            </Typography>
           </Box>
           <Typography
             sx={{

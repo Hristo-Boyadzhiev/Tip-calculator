@@ -5,13 +5,13 @@ import InputAdornment from "@mui/material/InputAdornment";
 import FormControl from "@mui/material/FormControl";
 import PersonIcon from "@mui/icons-material/Person";
 import { Controller, useFormContext } from "react-hook-form";
+import { useTranslation } from "react-i18next";
 
 export default function NumberOfPeople() {
+  const { t: translate } = useTranslation();
   const {
     control,
     formState: { errors },
-    setError,
-    clearErrors,
   } = useFormContext();
 
   return (
@@ -22,7 +22,7 @@ export default function NumberOfPeople() {
         gap: "0.5em",
       }}
     >
-      <Typography variant="h6">Number of people</Typography>
+      <Typography variant="h6">{translate("number-of-people")}</Typography>
       <Controller
         name="numberOfPeople"
         control={control}
@@ -35,25 +35,13 @@ export default function NumberOfPeople() {
               inputProps={{
                 style: { textAlign: "right" },
                 step: 1,
-                min: 1,
               }}
               startAdornment={
                 <InputAdornment position="start">
                   <PersonIcon />
                 </InputAdornment>
               }
-              onChange={(e) => {
-                const numValue = Number(e.target.value);
-                onChange(e);
-                if (isNaN(numValue) || numValue < 1) {
-                  setError("numberOfPeople", {
-                    type: "manual",
-                    message: "Number of people must be at least 1%.",
-                  });
-                } else {
-                  clearErrors("numberOfPeople");
-                }
-              }}
+              onChange={onChange}
               onBlur={onBlur}
               value={value}
               inputRef={ref}
@@ -61,7 +49,7 @@ export default function NumberOfPeople() {
             {errors.numberOfPeople?.message && (
               <FormHelperText>
                 {typeof errors.numberOfPeople.message === "string"
-                  ? errors.numberOfPeople.message
+                  ? translate(errors.numberOfPeople.message)
                   : ""}
               </FormHelperText>
             )}

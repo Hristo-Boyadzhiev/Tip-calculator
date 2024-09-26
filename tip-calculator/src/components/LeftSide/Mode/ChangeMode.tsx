@@ -9,7 +9,10 @@ export default function ChangeMode() {
   const { toggleColorMode } = useThemeContext();
   return (
     <Box>
-      {theme.palette.mode} mode
+      {/* {theme.palette.mode} mode */}
+      {/* {theme.palette.mode === "light"
+        ? translate("mode.light")
+        : translate("mode.dark")} */}
       <IconButton sx={{ ml: 1 }} onClick={toggleColorMode} color="inherit">
         {theme.palette.mode === "dark" ? (
           <Brightness7Icon />

@@ -6,15 +6,16 @@ import FormHelperText from "@mui/material/FormHelperText";
 import getCurrencies from "../../../utils/getCurrencies";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTipContext } from "../../../hooks/useTipContext";
+import { useTranslation } from "react-i18next";
 
 export default function Currency() {
+  const { t: translate } = useTranslation();
   const {
     control,
     formState: { errors },
   } = useFormContext();
 
   const { setCurrentCurrency } = useTipContext();
-
   const currencies = getCurrencies();
 
   return (
@@ -28,7 +29,9 @@ export default function Currency() {
           sx={{ minWidth: 120 }}
           error={!!errors.currency}
         >
-          <InputLabel id="currency-select-label">Currency</InputLabel>
+          <InputLabel id="currency-select-label">
+            {translate("currency")}
+          </InputLabel>
           <Select
             labelId="currency-select-label"
             id="currency-select"
@@ -49,7 +52,7 @@ export default function Currency() {
           {errors.currency?.message && (
             <FormHelperText>
               {typeof errors.currency.message === "string"
-                ? errors.currency.message
+                ? translate(errors.currency.message)
                 : ""}
             </FormHelperText>
           )}

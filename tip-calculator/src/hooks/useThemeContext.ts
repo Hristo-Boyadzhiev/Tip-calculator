@@ -1,15 +1,3 @@
-// import * as React from "react";
-// import { ColorModeContext } from "../contexts/Theme";
-// import { ColorModeContextValue } from "../interfaces/ColorModeContextValue";
-
-// export const useThemeContext = (): ColorModeContextValue => {
-//   const context = React.useContext(ColorModeContext);
-
-//   return {
-//     toggleColorMode: context.toggleColorMode,
-//   };
-// };
-
 import * as React from "react";
 import { ColorModeContext } from "../contexts/Theme";
 import { ColorModeContextValue } from "../interfaces/ColorModeContextValue";
@@ -21,5 +9,5 @@ export const useThemeContext = (): ColorModeContextValue => {
     throw new Error("useThemeContext must be used within a ToggleColorMode");
   }
 
-  return context; // Връща всичко от контекста, включително mode
+  return context;
 };

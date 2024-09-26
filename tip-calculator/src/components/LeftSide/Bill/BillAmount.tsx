@@ -3,29 +3,17 @@ import { FormControl, Input } from "@mui/material";
 import getCurrencySymbol from "../../../utils/getCurrencySymbol";
 import { Controller, useFormContext } from "react-hook-form";
 import FormHelperText from "@mui/material/FormHelperText";
-import React from "react";
 import { useTipContext } from "../../../hooks/useTipContext";
+import { useTranslation } from "react-i18next";
 
 export default function BillAmount() {
+  const { t: translate } = useTranslation();
   const {
     control,
     formState: { errors },
-    setError,
-    clearErrors,
   } = useFormContext();
-
   const { currentCurrency } = useTipContext();
-
   const currencySymbol = getCurrencySymbol(currentCurrency);
-
-  React.useEffect(() => {
-    if (!!errors.billAmount) {
-      setError("billAmount", {
-        type: "manual",
-        message: `Bill amount must be at least 1${currencySymbol}`,
-      });
-    }
-  }, [currencySymbol]);
 
   return (
     <Controller
@@ -40,23 +28,11 @@ export default function BillAmount() {
             inputProps={{
               style: { textAlign: "right" },
               step: 1,
-              min: 1,
             }}
             startAdornment={
               <InputAdornment position="start">{currencySymbol}</InputAdornment>
             }
-            onChange={(e) => {
-              const numValue = Number(e.target.value);
-              onChange(e);
-              if (isNaN(numValue) || numValue < 1) {
-                setError("billAmount", {
-                  type: "manual",
-                  message: `Bill amount must be at least 1${currencySymbol}`,
-                });
-              } else {
-                clearErrors("billAmount");
-              }
-            }}
+            onChange={onChange}
             onBlur={onBlur}
             value={value}
             inputRef={ref}
@@ -64,7 +40,9 @@ export default function BillAmount() {
           {errors.billAmount?.message && (
             <FormHelperText>
               {typeof errors.billAmount.message === "string"
-                ? errors.billAmount.message
+                ? translate(errors.billAmount.message, {
+                    currency: currencySymbol,
+                  })
                 : ""}
             </FormHelperText>
           )}

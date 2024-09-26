@@ -5,8 +5,10 @@ import TipPercentage from "./TipPercentage/TipPercentage";
 import { useFormContext } from "react-hook-form";
 import { useTipContext } from "../../hooks/useTipContext";
 import hasFilledFormFields from "../../utils/hasFilledFormFields";
+import { useTranslation } from "react-i18next";
 
 export default function LeftSide() {
+  const { t: translate } = useTranslation();
   const {
     formState: { isValid },
     getValues,
@@ -45,11 +47,11 @@ export default function LeftSide() {
       >
         {areFieldsFilled && (
           <Button variant="contained" onClick={handleReset}>
-            Reset
+            {translate("buttons.reset")}
           </Button>
         )}
         <Button type="submit" disabled={!isValid} variant="contained">
-          calculate
+          {translate("buttons.calculate")}
         </Button>
       </Box>
     </Box>
