@@ -6,6 +6,7 @@ import { TipCalculatorFormData, tipCalculatorSchema } from "../Schemas/Schema";
 import FormContent from "./FormContent/FormContent";
 import Result from "./Result/Result";
 import PersonalSettings from "./PersonalSettings/PersonalSettings";
+import { useIsSmallScreen } from "@/hooks/useIsSmallScreen";
 
 export default function TipCalculator() {
   const methods = useForm<TipCalculatorFormData>({
@@ -14,6 +15,7 @@ export default function TipCalculator() {
   });
 
   const { handleFormSubmit, isShowResult } = useTipContext();
+  const isSmallScreen = useIsSmallScreen();
 
   //RHFProvider - Global context for react-hook-form methods
   return (
@@ -32,7 +34,7 @@ export default function TipCalculator() {
           flexDirection: "column",
           gap: "2em",
           backgroundColor: "secondary.main",
-          borderRadius: "1.5em",
+          borderRadius: isSmallScreen ? 0 : "1.5em",
           padding: "0.5em 2em 2em 2em",
         }}
       >
@@ -41,6 +43,7 @@ export default function TipCalculator() {
         <Box
           sx={{
             display: "flex",
+            flexDirection: isSmallScreen ? "column" : "row",
             gap: "2em",
           }}
         >

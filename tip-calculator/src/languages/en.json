@@ -1,33 +1,33 @@
 {
-    "bill": "Bill",
-    "currency": "Currency",
-    "tip-percentage": "Tip Percentage %",
-    "number-of-people": "Number of People",
-    "tip-amount": "Tip Amount",
-    "person": "/Person",
-    "total": "Total",
-    "buttons": {
-        "reset": "Reset",
-        "calculate": "Calculate"
+  "bill": "Bill",
+  "currency": "Currency",
+  "tip-percentage": "Tip Percentage",
+  "number-of-people": "Number of People",
+  "tip-amount": "Tip Amount",
+  "person": "/Person",
+  "total": "Total",
+  "buttons": {
+    "reset": "Reset",
+    "calculate": "Calculate"
+  },
+  "errors": {
+    "currency": {
+      "required": "Please select a currency"
     },
-    "errors": {
-        "currency": {
-            "required": "Please select a currency"
-        },
-        "billAmount": {
-            "required": "Please fill in the bill amount",
-            "typeError": "Please fill in the bill amount",
-            "min": "The bill amount must be at least 1{{currency}}"
-        },
-        "tipPercentage": {
-            "required": "Please fill in the tip percentage",
-            "typeError": "Please fill in the tip percentage",
-            "min": "The tip must be at least 1%"
-        },
-        "numberOfPeople": {
-            "required": "Please fill in the number of people",
-            "typeError": "Please fill in the number of people",
-            "min": "The number of people must be at least 1"
-        }
+    "billAmount": {
+      "required": "Please fill in the bill amount",
+      "typeError": "Please fill in the bill amount",
+      "min": "The bill amount must be at least 1{{currency}}"
+    },
+    "tipPercentage": {
+      "required": "Please fill in the tip percentage",
+      "typeError": "Please fill in the tip percentage",
+      "min": "The tip must be at least 1%"
+    },
+    "numberOfPeople": {
+      "required": "Please fill in the number of people",
+      "typeError": "Please fill in the number of people",
+      "min": "The number of people must be at least 1"
     }
+  }
 }

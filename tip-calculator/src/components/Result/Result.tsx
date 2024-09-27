@@ -43,7 +43,8 @@ export default function Result() {
             fontSize: "1.5em",
           }}
         >
-          {tipPerPerson} {currencySymbol}
+          {tipPerPerson}
+          {currencySymbol}
         </Typography>
       </Box>
 
@@ -68,7 +69,8 @@ export default function Result() {
             fontSize: "1.5em",
           }}
         >
-          {totalPerPerson} {currencySymbol}
+          {totalPerPerson}
+          {currencySymbol}
         </Typography>
       </Box>
     </Box>

@@ -1,33 +1,33 @@
 {
-    "bill": "Facture",
-    "currency": "Devise",
-    "tip-percentage": "Pourcentage de pourboire %",
-    "number-of-people": "Nombre de personnes",
-    "tip-amount": "Montant du pourboire",
-    "person": "/Personne",
-    "total": "Total",
-    "buttons": {
-        "reset": "réinitialiser",
-        "calculate": "calculer"
+  "bill": "Facture",
+  "currency": "Devise",
+  "tip-percentage": "Pourcentage de pourboire",
+  "number-of-people": "Nombre de personnes",
+  "tip-amount": "Montant du pourboire",
+  "person": "/Personne",
+  "total": "Total",
+  "buttons": {
+    "reset": "réinitialiser",
+    "calculate": "calculer"
+  },
+  "errors": {
+    "currency": {
+      "required": "Veuillez sélectionner une devise"
     },
-    "errors": {
-        "currency": {
-            "required": "Veuillez sélectionner une devise"
-        },
-        "billAmount": {
-            "required": "Veuillez saisir le montant de la facture",
-            "typeError": "Veuillez saisir le montant de la facture",
-            "min": "Le montant de la facture doit être d'au moins 1{{currency}}"
-        },
-        "tipPercentage": {
-            "required": "Veuillez saisir le pourcentage de pourboire",
-            "typeError": "Veuillez saisir le pourcentage de pourboire",
-            "min": "Le pourboire doit être d'au moins 1%"
-        },
-        "numberOfPeople": {
-            "required": "Veuillez saisir le nombre de personnes",
-            "typeError": "Veuillez saisir le nombre de personnes",
-            "min": "Le nombre de personnes doit être d'au moins 1"
-        }
+    "billAmount": {
+      "required": "Veuillez saisir le montant de la facture",
+      "typeError": "Veuillez saisir le montant de la facture",
+      "min": "Le montant de la facture doit être d'au moins 1{{currency}}"
+    },
+    "tipPercentage": {
+      "required": "Veuillez saisir le pourcentage de pourboire",
+      "typeError": "Veuillez saisir le pourcentage de pourboire",
+      "min": "Le pourboire doit être d'au moins 1%"
+    },
+    "numberOfPeople": {
+      "required": "Veuillez saisir le nombre de personnes",
+      "typeError": "Veuillez saisir le nombre de personnes",
+      "min": "Le nombre de personnes doit être d'au moins 1"
     }
+  }
 }

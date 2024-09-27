@@ -1,33 +1,33 @@
 {
-    "bill": "Cuenta",
-    "currency": "Moneda",
-    "tip-percentage": "Porcentaje de propina %",
-    "number-of-people": "Número de personas",
-    "tip-amount": "Cantidad de la propina",
-    "person": "/Persona",
-    "total": "Total",
-    "buttons": {
-        "reset": "restablecer",
-        "calculate": "calcular"
+  "bill": "Cuenta",
+  "currency": "Moneda",
+  "tip-percentage": "Porcentaje de propina",
+  "number-of-people": "Número de personas",
+  "tip-amount": "Cantidad de la propina",
+  "person": "/Persona",
+  "total": "Total",
+  "buttons": {
+    "reset": "restablecer",
+    "calculate": "calcular"
+  },
+  "errors": {
+    "currency": {
+      "required": "Por favor seleccione una moneda"
     },
-    "errors": {
-        "currency": {
-            "required": "Por favor seleccione una moneda"
-        },
-        "billAmount": {
-            "required": "Por favor ingrese el monto de la cuenta",
-            "typeError": "Por favor ingrese el monto de la cuenta",
-            "min": "El monto de la cuenta debe ser al menos 1{{currency}}"
-        },
-        "tipPercentage": {
-            "required": "Por favor ingrese el porcentaje de propina",
-            "typeError": "Por favor ingrese el porcentaje de propina",
-            "min": "La propina debe ser de al menos 1%"
-        },
-        "numberOfPeople": {
-            "required": "Por favor ingrese el número de personas",
-            "typeError": "Por favor ingrese el número de personas",
-            "min": "El número de personas debe ser al menos 1"
-        }
+    "billAmount": {
+      "required": "Por favor ingrese el monto de la cuenta",
+      "typeError": "Por favor ingrese el monto de la cuenta",
+      "min": "El monto de la cuenta debe ser al menos 1{{currency}}"
+    },
+    "tipPercentage": {
+      "required": "Por favor ingrese el porcentaje de propina",
+      "typeError": "Por favor ingrese el porcentaje de propina",
+      "min": "La propina debe ser de al menos 1%"
+    },
+    "numberOfPeople": {
+      "required": "Por favor ingrese el número de personas",
+      "typeError": "Por favor ingrese el número de personas",
+      "min": "El número de personas debe ser al menos 1"
     }
+  }
 }

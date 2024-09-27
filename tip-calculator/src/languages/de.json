@@ -1,33 +1,33 @@
 {
-    "bill": "Rechnung",
-    "currency": "Währung",
-    "tip-percentage": "Trinkgeld Prozentsatz %",
-    "number-of-people": "Anzahl der Personen",
-    "tip-amount": "Trinkgeldbetrag",
-    "person": "/Person",
-    "total": "Gesamt",
-    "buttons": {
-        "reset": "zurücksetzen",
-        "calculate": "berechnen"
+  "bill": "Rechnung",
+  "currency": "Währung",
+  "tip-percentage": "Trinkgeld Prozentsatz",
+  "number-of-people": "Anzahl der Personen",
+  "tip-amount": "Trinkgeldbetrag",
+  "person": "/Person",
+  "total": "Gesamt",
+  "buttons": {
+    "reset": "zurücksetzen",
+    "calculate": "berechnen"
+  },
+  "errors": {
+    "currency": {
+      "required": "Bitte wählen Sie eine Währung"
     },
-    "errors": {
-        "currency": {
-            "required": "Bitte wählen Sie eine Währung"
-        },
-        "billAmount": {
-            "required": "Bitte geben Sie den Rechnungsbetrag ein",
-            "typeError": "Bitte geben Sie den Rechnungsbetrag ein",
-            "min": "Der Rechnungsbetrag muss mindestens 1{{currency}} betragen"
-        },
-        "tipPercentage": {
-            "required": "Bitte geben Sie den Trinkgeld Prozentsatz ein",
-            "typeError": "Bitte geben Sie den Trinkgeld Prozentsatz ein",
-            "min": "Das Trinkgeld muss mindestens 1% betragen"
-        },
-        "numberOfPeople": {
-            "required": "Bitte geben Sie die Anzahl der Personen ein",
-            "typeError": "Bitte geben Sie die Anzahl der Personen ein",
-            "min": "Die Anzahl der Personen muss mindestens 1 betragen"
-        }
+    "billAmount": {
+      "required": "Bitte geben Sie den Rechnungsbetrag ein",
+      "typeError": "Bitte geben Sie den Rechnungsbetrag ein",
+      "min": "Der Rechnungsbetrag muss mindestens 1{{currency}} betragen"
+    },
+    "tipPercentage": {
+      "required": "Bitte geben Sie den Trinkgeld Prozentsatz ein",
+      "typeError": "Bitte geben Sie den Trinkgeld Prozentsatz ein",
+      "min": "Das Trinkgeld muss mindestens 1% betragen"
+    },
+    "numberOfPeople": {
+      "required": "Bitte geben Sie die Anzahl der Personen ein",
+      "typeError": "Bitte geben Sie die Anzahl der Personen ein",
+      "min": "Die Anzahl der Personen muss mindestens 1 betragen"
     }
+  }
 }
