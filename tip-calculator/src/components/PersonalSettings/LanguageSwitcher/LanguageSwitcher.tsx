@@ -8,13 +8,20 @@ import getLanguages from "@/utils/getLanguages";
 
 export default function LanguageSwitcher() {
   const { i18n } = useTranslation();
-  const [selectedLanguage, setSelectedLanguage] = React.useState("en");
+  const [selectedLanguage, setSelectedLanguage] = React.useState(
+    localStorage.getItem("selectedLanguage") || "en"
+  );
   const languages = getLanguages();
+
+  React.useEffect(() => {
+    i18n.changeLanguage(selectedLanguage);
+  }, [selectedLanguage]);
 
   function handleLanguageChange(event: SelectChangeEvent) {
     const newLanguage = event.target.value as string;
     i18n.changeLanguage(newLanguage);
     setSelectedLanguage(newLanguage);
+    localStorage.setItem("selectedLanguage", newLanguage);
   }
 
   return (
