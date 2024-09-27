@@ -1,7 +1,7 @@
 enum Currencies {
+  EUR = "€",
   BGN = "lv.",
   USD = "$",
-  EUR = "€",
   JPY = "¥",
   GBP = "£",
   CHF = "CHF",

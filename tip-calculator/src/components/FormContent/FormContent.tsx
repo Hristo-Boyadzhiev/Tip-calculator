@@ -7,7 +7,7 @@ import { useTipContext } from "../../hooks/useTipContext";
 import hasFilledFormFields from "../../utils/hasFilledFormFields";
 import { useTranslation } from "react-i18next";
 
-export default function LeftSide() {
+export default function FormContent() {
   const { t: translate } = useTranslation();
   const {
     formState: { isValid },
@@ -15,13 +15,13 @@ export default function LeftSide() {
     reset,
   } = useFormContext();
 
-  const { setCurrentCurrency, setIsShowRightSide } = useTipContext();
+  const { setCurrentCurrency, setIsShowResult } = useTipContext();
   const areFieldsFilled = hasFilledFormFields(getValues());
 
   const handleReset = () => {
     reset();
     setCurrentCurrency("");
-    setIsShowRightSide(false);
+    setIsShowResult(false);
   };
 
   return (
@@ -30,9 +30,7 @@ export default function LeftSide() {
         display: "flex",
         flexDirection: "column",
         gap: "1em",
-        flex: 1,
-        borderRadius: "1.5em",
-        padding: "1em",
+        padding: "1em 1em 0 1em",
       }}
     >
       <Bill />

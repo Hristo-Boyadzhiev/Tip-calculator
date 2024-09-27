@@ -1,11 +1,3 @@
-// {
-//   "files": [],
-//   "references": [
-//     { "path": "./tsconfig.app.json" },
-//     { "path": "./tsconfig.node.json" }
-//   ]
-// }
-
 {
   "compilerOptions": {
     "target": "ES2020",
@@ -17,7 +9,7 @@
     /* Module resolution */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,  // Позволява импортирането на JSON файлове
+    "resolveJsonModule": true,  //allow json files import
     "isolatedModules": true,
     "noEmit": true,
 
@@ -31,14 +23,14 @@
     "noFallthroughCasesInSwitch": true,
 
     /* Base URL and paths */
-    "baseUrl": ".",  // Базов път
+    "baseUrl": ".",  
     "paths": {
-      "@/*": ["./src/*"]  // Alias за src папката
+      "@/*": ["./src/*"]  
     }
   },
-  "include": ["src"],  // Включва файловете в src
+  "include": ["src"],  
   "references": [
-    { "path": "./tsconfig.node.json" }  // Референция към Node.js конфигурацията
+    { "path": "./tsconfig.node.json" }  
   ]
 }
 

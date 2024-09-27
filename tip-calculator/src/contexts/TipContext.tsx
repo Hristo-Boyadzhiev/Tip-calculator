@@ -5,8 +5,8 @@ import { TipCalculatorFormData } from "../Schemas/Schema";
 interface TipContextType {
   currentCurrency: string | undefined;
   setCurrentCurrency: (value: string) => void;
-  isShowRightSide: boolean;
-  setIsShowRightSide: (value: boolean) => void;
+  isShowResult: boolean;
+  setIsShowResult: (value: boolean) => void;
   handleFormSubmit: SubmitHandler<TipCalculatorFormData>;
   tipPerPerson: number | undefined;
   totalPerPerson: number | undefined;
@@ -20,7 +20,7 @@ export const TipProvider: React.FC<{ children: ReactNode }> = ({
   const [currentCurrency, setCurrentCurrency] = React.useState<
     string | undefined
   >(undefined);
-  const [isShowRightSide, setIsShowRightSide] = React.useState<boolean>(false);
+  const [isShowResult, setIsShowResult] = React.useState<boolean>(false);
   const [tipPerPerson, setTipPerPerson] = React.useState<number | undefined>(
     undefined
   );
@@ -30,7 +30,7 @@ export const TipProvider: React.FC<{ children: ReactNode }> = ({
 
   const handleFormSubmit: SubmitHandler<TipCalculatorFormData> = (data) => {
     console.log(data);
-    setIsShowRightSide(true);
+    setIsShowResult(true);
     calculateTipPerPerson();
     calculateTotalPerPerson();
 
@@ -53,8 +53,8 @@ export const TipProvider: React.FC<{ children: ReactNode }> = ({
       value={{
         currentCurrency,
         setCurrentCurrency,
-        isShowRightSide,
-        setIsShowRightSide,
+        isShowResult,
+        setIsShowResult,
         handleFormSubmit,
         tipPerPerson,
         totalPerPerson,
