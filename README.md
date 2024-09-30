@@ -12,6 +12,7 @@ I have changed the design and added functionalities to the application.
     - [Available languages](#available-languages)
     - [Desktop version in English](#desktop-version-in-english)
        - [Tip calculator](#tip-calculator)
+       - [Result after clicking 'Calculate'](#result-after-clicking-'calculate')
     - [Mobile version in German](#mobile-version-in-german)
   - [Links](#links)
 - [My process](#my-process)
@@ -42,19 +43,22 @@ In dark mode:
 #### Desktop version in English
 
 ##### Tip calculator
-Тip calculator form in light mode:
+
+In light mode:
 
 ![image](https://github.com/user-attachments/assets/ea4932b7-46c9-48e4-88ab-ccf36402c64d)
 
-Тip calculator form in dark mode:
+In dark mode:
 
 ![image](https://github.com/user-attachments/assets/04e70840-75d1-409b-8f3e-79b1ba4da298)
 
-Result after clicking 'Calculate' in light mode:
+##### Result after clicking 'Calculate' 
+
+In light mode:
 
 ![image](https://github.com/user-attachments/assets/2e031f6d-e408-4233-a8d0-6fd637da2752)
 
-Result after clicking 'Calculate' in dark mode:
+In dark mode:
 
 ![image](https://github.com/user-attachments/assets/eaedae1f-d680-4bcd-9c5e-3261fa09a057)
 
