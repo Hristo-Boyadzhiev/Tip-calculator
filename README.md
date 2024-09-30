@@ -7,7 +7,9 @@ I have changed the design and added functionalities to the application.
 ## Table of contents
 
 - [Overview](#overview)
-  - [Screenshots](#screenshots)
+ - [Screenshots](#screenshots)
+    - [Desktop version in English](#desktop-version-in-english)
+    - [Mobile version in English](#mobile-version-in-english)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
