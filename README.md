@@ -56,28 +56,22 @@ The bill amount, tip percentage, and number of people must be numbers greater th
 iPhone SE(375x667px)
 
 Тip calculator form in light mode:
-
 ![image](https://github.com/user-attachments/assets/46b14285-c51e-4d30-92b4-4d3d659e16a6)
 
 Тip calculator form in dark mode:
-
 ![image](https://github.com/user-attachments/assets/924d7ea3-7b37-4817-be17-5aec65530860)
 
 Result after clicking 'Calculate' in light mode:
-
 ![image](https://github.com/user-attachments/assets/b6499337-20c5-4c5b-9958-a00df04f03b7)
 
 Result after clicking 'Calculate' in dark mode:
-
 ![image](https://github.com/user-attachments/assets/3daf3201-4629-4a8c-86e0-88c4fe151ff5)
 
 Form validation in dark mode:
 All fields in the form are required:
-
 ![image](https://github.com/user-attachments/assets/da0326ed-1910-4193-adf6-aaae2920207c)
 
 The bill amount, tip percentage, and number of people must be numbers greater than 1:
-
 ![image](https://github.com/user-attachments/assets/4e3909db-6ffa-451f-a84e-5b87c5347ebb)
 
 
