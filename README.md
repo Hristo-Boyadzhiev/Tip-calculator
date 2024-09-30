@@ -29,11 +29,12 @@ SPA application with responsive design, developed using React and TypeScript, fo
 #### Available currencies
 
 In dark mode:
+
 ![image](https://github.com/user-attachments/assets/45f27411-4efa-4d09-8920-9cf20111a4f6)
 
 #### Available languages
 
-in dark mode:
+In dark mode:
 
 ![image](https://github.com/user-attachments/assets/ec465fd0-1e44-493b-b6db-423523e2bef2)
 
