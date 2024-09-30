@@ -8,8 +8,8 @@ I have changed the design and added functionalities to the application.
 
 - [Overview](#overview)
  - [Screenshots](#screenshots)
-    - [Available currencies](#аvailable-currencies)
-    - [Available languages](#аvailable-currencies)
+    - [Available currencies](#available-currencies)
+    - [Available languages](#available-languages)
     - [Desktop version in English](#desktop-version-in-english)
     - [Mobile version in German](#mobile-version-in-german)
   - [Links](#links)
