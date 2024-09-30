@@ -12,12 +12,12 @@ I have changed the design and added functionalities to the application.
     - [Available languages](#available-languages)
     - [Desktop version in English](#desktop-version-in-english)
        - [Tip calculator](#desktop-tip-calculator)
-       - [Result after clicking 'Calculate'](#result-after-clicking-calculate)
-       - [Form validation](#form-validation)
+       - [Result after clicking 'Calculate'](#desktop-result-after-clicking-calculate)
+       - [Form validation](#desktop-form-validation)
     - [Mobile version in German](#mobile-version-in-german)
-       - [Tip calculator](#mobiletip-calculator)
-       - [Result after clicking 'Calculate'](#result-after-clicking-calculate)
-       - [Form validation](#form-validation)
+       - [Tip calculator](#mobile-tip-calculator)
+       - [Result after clicking 'Calculate'](#mobile-result-after-clicking-calculate)
+       - [Form validation](#mobile-form-validation)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -47,6 +47,7 @@ In dark mode:
 #### Desktop version in English
 
 #### Tip calculator
+<a id="desktop-tip-calculator"></a>
 
 In light mode:
 
@@ -81,7 +82,6 @@ The bill amount, tip percentage, and number of people must be numbers greater th
 **iPhone SE(375x667px)**
 
 #### Тip calculator form 
-<a id="mobile-tip-calculator"></a>
 
 In light mode:
 
