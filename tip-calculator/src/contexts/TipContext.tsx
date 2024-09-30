@@ -1,6 +1,8 @@
 import React, { createContext, ReactNode } from "react";
 import { SubmitHandler } from "react-hook-form";
 import { TipCalculatorFormData } from "../Schemas/Schema";
+import calculateTipPerPerson from "@/utils/calculateTipPerPerson";
+import calculateTotalPerPerson from "@/utils/calculateTotalPerPerson";
 
 interface TipContextType {
   currentCurrency: string | undefined;
@@ -29,23 +31,9 @@ export const TipProvider: React.FC<{ children: ReactNode }> = ({
   >(undefined);
 
   const handleFormSubmit: SubmitHandler<TipCalculatorFormData> = (data) => {
-    console.log(data);
     setIsShowResult(true);
-    calculateTipPerPerson();
-    calculateTotalPerPerson();
-
-    function calculateTipPerPerson() {
-      const totalTip = data.billAmount * (data.tipPercentage / 100);
-      const calculateTipPerson = totalTip / data.numberOfPeople;
-      setTipPerPerson(parseFloat(calculateTipPerson.toFixed(2)));
-    }
-
-    function calculateTotalPerPerson() {
-      const calculateTotalPerson =
-        (data.billAmount * (1 + data.tipPercentage / 100)) /
-        data.numberOfPeople;
-      setTotalPerPerson(parseFloat(calculateTotalPerson.toFixed(2)));
-    }
+    setTipPerPerson(calculateTipPerPerson(data));
+    setTotalPerPerson(calculateTotalPerPerson(data));
   };
 
   return (
