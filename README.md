@@ -25,30 +25,39 @@ SPA application with responsive design, developed using React and TypeScript, fo
 ### Screenshots
 
 Available currencies in dark mode:
+
 ![image](https://github.com/user-attachments/assets/45f27411-4efa-4d09-8920-9cf20111a4f6)
 
 
 Available languages in dark mode:
+
 ![image](https://github.com/user-attachments/assets/ec465fd0-1e44-493b-b6db-423523e2bef2)
 
 #### Desktop version in English
 Тip calculator form in light mode:
+
 ![image](https://github.com/user-attachments/assets/ea4932b7-46c9-48e4-88ab-ccf36402c64d)
 
 Тip calculator form in dark mode:
+
 ![image](https://github.com/user-attachments/assets/04e70840-75d1-409b-8f3e-79b1ba4da298)
 
 Result after clicking 'Calculate' in light mode:
+
 ![image](https://github.com/user-attachments/assets/2e031f6d-e408-4233-a8d0-6fd637da2752)
 
 Result after clicking 'Calculate' in dark mode:
+
 ![image](https://github.com/user-attachments/assets/eaedae1f-d680-4bcd-9c5e-3261fa09a057)
 
 Form validation in dark mode:
+
 All fields in the form are required:
+
 ![image](https://github.com/user-attachments/assets/07080769-c2ce-4d9f-b553-d45dc0051587)
 
 The bill amount, tip percentage, and number of people must be numbers greater than 1:
+
 ![image](https://github.com/user-attachments/assets/39ba1de9-7dfa-4302-ba8d-1f07122a7142)
 
 #### Mobile version in German
@@ -56,22 +65,28 @@ The bill amount, tip percentage, and number of people must be numbers greater th
 iPhone SE(375x667px)
 
 Тip calculator form in light mode:
+
 ![image](https://github.com/user-attachments/assets/46b14285-c51e-4d30-92b4-4d3d659e16a6)
 
 Тip calculator form in dark mode:
+
 ![image](https://github.com/user-attachments/assets/924d7ea3-7b37-4817-be17-5aec65530860)
 
 Result after clicking 'Calculate' in light mode:
+
 ![image](https://github.com/user-attachments/assets/b6499337-20c5-4c5b-9958-a00df04f03b7)
 
 Result after clicking 'Calculate' in dark mode:
+
 ![image](https://github.com/user-attachments/assets/3daf3201-4629-4a8c-86e0-88c4fe151ff5)
 
 Form validation in dark mode:
 All fields in the form are required:
+
 ![image](https://github.com/user-attachments/assets/da0326ed-1910-4193-adf6-aaae2920207c)
 
 The bill amount, tip percentage, and number of people must be numbers greater than 1:
+
 ![image](https://github.com/user-attachments/assets/4e3909db-6ffa-451f-a84e-5b87c5347ebb)
 
 
