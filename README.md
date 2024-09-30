@@ -8,6 +8,8 @@ I have changed the design and added functionalities to the application.
 
 - [Overview](#overview)
  - [Screenshots](#screenshots)
+    - [Available currencies](#аvailable-currencies)
+    - [Available languages](#аvailable-currencies)
     - [Desktop version in English](#desktop-version-in-english)
     - [Mobile version in German](#mobile-version-in-german)
   - [Links](#links)
@@ -24,12 +26,14 @@ SPA application with responsive design, developed using React and TypeScript, fo
 
 ### Screenshots
 
-Available currencies in dark mode:
+#### Available currencies
 
+In dark mode:
 ![image](https://github.com/user-attachments/assets/45f27411-4efa-4d09-8920-9cf20111a4f6)
 
+#### Available languages
 
-Available languages in dark mode:
+in dark mode:
 
 ![image](https://github.com/user-attachments/assets/ec465fd0-1e44-493b-b6db-423523e2bef2)
 
