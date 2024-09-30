@@ -12,7 +12,7 @@ I have changed the design and added functionalities to the application.
     - [Available languages](#available-languages)
     - [Desktop version in English](#desktop-version-in-english)
        - [Tip calculator](#tip-calculator)
-       - [Result after clicking 'Calculate'](#result-after-clicking-'calculate')
+       - [Result after clicking 'Calculate'](#result-after-clicking-calculate)
     - [Mobile version in German](#mobile-version-in-german)
   - [Links](#links)
 - [My process](#my-process)
