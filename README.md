@@ -22,7 +22,7 @@ I have changed the design and added functionalities to the application.
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
-SPA application with responsive design, developed using React and TypeScript, for calculating the tip and the total bill per person, offering light and dark modes, as well as support for 6 different languages. 
+SPA application with responsive design, developed using React and TypeScript, for calculating the tip and the total bill per person, offering light and dark modes, as well as support for 6 different languages (English, Bulgarian, German, French, Spanish, Italian). 
 
 ### Screenshots
 
