@@ -12,11 +12,11 @@ I have changed the design and added functionalities to the application.
     - [Available languages](#available-languages)
     - [Light version](#light-version)
       - [Desktop version in English](#desktop-version-in-english)
-        - [Tip calculator](#desktop-tip-calculator)
+        - [Form](#desktop-form)
         - [Result after clicking 'Calculate'](#desktop-result-after-clicking-calculate)
         - [Form validation](#desktop-form-validation)
       - [Mobile version in German](#mobile-version-in-german)
-        - [Tip calculator](#mobile-tip-calculator)
+        - [form](#mobile-form)
         - [Result after clicking 'Calculate'](#mobile-result-after-clicking-calculate)
         - [Form validation](#mobile-form-validation)
     - [Dark version](#dark-version)
@@ -75,7 +75,8 @@ In dark mode:
 
 #### Desktop version in English
 
-##### Tip calculator
+##### Form
+<a id="desktop-form"></a>
 
 ![image](https://github.com/user-attachments/assets/04e70840-75d1-409b-8f3e-79b1ba4da298)
 
@@ -87,8 +88,8 @@ In dark mode:
 ##### Result after clicking 'Calculate'
 ##### Form validation 
 
-#### Tip calculator
-<a id="desktop-tip-calculator"></a>
+#### Form
+<a id="mobile-form"></a>
 
 In light mode:
 
