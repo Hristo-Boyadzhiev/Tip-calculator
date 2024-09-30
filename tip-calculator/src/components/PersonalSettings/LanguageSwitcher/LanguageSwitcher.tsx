@@ -4,14 +4,14 @@ import Select, { SelectChangeEvent } from "@mui/material/Select";
 import { useTranslation } from "react-i18next";
 import { Box } from "@mui/material";
 import React from "react";
-import getLanguages from "@/utils/getLanguages";
+import { languages } from "@/utils/languages";
 
 export default function LanguageSwitcher() {
   const { i18n } = useTranslation();
   const [selectedLanguage, setSelectedLanguage] = React.useState(
     localStorage.getItem("selectedLanguage") || "en"
   );
-  const languages = getLanguages();
+  // const languages = getLanguages();
 
   React.useEffect(() => {
     i18n.changeLanguage(selectedLanguage);
