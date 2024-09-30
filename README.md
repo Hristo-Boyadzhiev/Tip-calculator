@@ -11,6 +11,7 @@ I have changed the design and added functionalities to the application.
     - [Available currencies](#available-currencies)
     - [Available languages](#available-languages)
     - [Desktop version in English](#desktop-version-in-english)
+       - [Tip calculator](#tip-calculator)
     - [Mobile version in German](#mobile-version-in-german)
   - [Links](#links)
 - [My process](#my-process)
@@ -40,7 +41,7 @@ In dark mode:
 
 #### Desktop version in English
 
-
+##### Tip calculator
 Тip calculator form in light mode:
 
 ![image](https://github.com/user-attachments/assets/ea4932b7-46c9-48e4-88ab-ccf36402c64d)
