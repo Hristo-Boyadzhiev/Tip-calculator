@@ -3,11 +3,11 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import FormHelperText from "@mui/material/FormHelperText";
-import getCurrencies from "../../../utils/getCurrencies";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTipContext } from "../../../hooks/useTipContext";
 import { useTranslation } from "react-i18next";
 import { HasFilledFormFieldsProps } from "@/interfaces/HasFilledFormFieldsProps";
+import { currencies } from "@/utils/currencies";
 
 export default function Currency() {
   const { t: translate } = useTranslation();
@@ -17,7 +17,6 @@ export default function Currency() {
   } = useFormContext<HasFilledFormFieldsProps>();
 
   const { setCurrentCurrency } = useTipContext();
-  const currencies = getCurrencies();
 
   return (
     <Controller
