@@ -19,7 +19,7 @@ I have changed the design and added functionalities to the application.
         - [Tip calculator](#mobile-tip-calculator)
         - [Result after clicking 'Calculate'](#mobile-result-after-clicking-calculate)
         - [Form validation](#mobile-form-validation)
-    -[Dark version](#light-version)
+    - [Dark version](#light-version)
       - [Desktop version in English](#desktop-version-in-english)
         - [Tip calculator](#desktop-tip-calculator)
         - [Result after clicking 'Calculate'](#desktop-result-after-clicking-calculate)
