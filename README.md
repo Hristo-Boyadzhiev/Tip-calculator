@@ -13,6 +13,7 @@ I have changed the design and added functionalities to the application.
     - [Desktop version in English](#desktop-version-in-english)
        - [Tip calculator](#tip-calculator)
        - [Result after clicking 'Calculate'](#result-after-clicking-calculate)
+       - [Form validation](#form-validation)
     - [Mobile version in German](#mobile-version-in-german)
   - [Links](#links)
 - [My process](#my-process)
@@ -42,7 +43,7 @@ In dark mode:
 
 #### Desktop version in English
 
-##### Tip calculator
+#### Tip calculator
 
 In light mode:
 
@@ -52,7 +53,7 @@ In dark mode:
 
 ![image](https://github.com/user-attachments/assets/04e70840-75d1-409b-8f3e-79b1ba4da298)
 
-##### Result after clicking 'Calculate' 
+#### Result after clicking 'Calculate' 
 
 In light mode:
 
@@ -62,7 +63,8 @@ In dark mode:
 
 ![image](https://github.com/user-attachments/assets/eaedae1f-d680-4bcd-9c5e-3261fa09a057)
 
-Form validation in dark mode:
+#### Form validation 
+**In dark mode**
 
 All fields in the form are required:
 
