@@ -1,14 +1,5 @@
-import { FieldValues } from "react-hook-form";
+import { HasFilledFormFieldsProps } from "@/interfaces/HasFilledFormFieldsProps";
 
-export default function hasFilledFormFields(values: FieldValues) {
-  if (
-    values.currency ||
-    values.billAmount ||
-    values.tipPercentage ||
-    values.numberOfPeople
-  ) {
-    return true;
-  } else {
-    return false;
-  }
+export default function hasFilledFormFields(values: HasFilledFormFieldsProps) {
+  return Object.values(values).some((value) => value !== "");
 }

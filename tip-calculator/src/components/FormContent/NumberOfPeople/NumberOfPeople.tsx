@@ -6,13 +6,14 @@ import FormControl from "@mui/material/FormControl";
 import PersonIcon from "@mui/icons-material/Person";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
+import { HasFilledFormFieldsProps } from "@/interfaces/HasFilledFormFieldsProps";
 
 export default function NumberOfPeople() {
   const { t: translate } = useTranslation();
   const {
     control,
     formState: { errors },
-  } = useFormContext();
+  } = useFormContext<HasFilledFormFieldsProps>();
 
   return (
     <Box

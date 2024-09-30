@@ -6,6 +6,7 @@ import { useFormContext } from "react-hook-form";
 import { useTipContext } from "../../hooks/useTipContext";
 import hasFilledFormFields from "../../utils/hasFilledFormFields";
 import { useTranslation } from "react-i18next";
+import { HasFilledFormFieldsProps } from "@/interfaces/HasFilledFormFieldsProps";
 
 export default function FormContent() {
   const { t: translate } = useTranslation();
@@ -13,10 +14,12 @@ export default function FormContent() {
     formState: { isValid },
     getValues,
     reset,
-  } = useFormContext();
+  } = useFormContext<HasFilledFormFieldsProps>();
 
   const { setCurrentCurrency, setIsShowResult } = useTipContext();
-  const areFieldsFilled = hasFilledFormFields(getValues());
+  const areFieldsFilled = hasFilledFormFields(
+    getValues() as HasFilledFormFieldsProps
+  );
 
   const handleReset = () => {
     reset();

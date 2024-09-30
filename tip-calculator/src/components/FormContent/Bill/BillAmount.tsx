@@ -5,13 +5,14 @@ import { Controller, useFormContext } from "react-hook-form";
 import FormHelperText from "@mui/material/FormHelperText";
 import { useTipContext } from "../../../hooks/useTipContext";
 import { useTranslation } from "react-i18next";
+import { HasFilledFormFieldsProps } from "@/interfaces/HasFilledFormFieldsProps";
 
 export default function BillAmount() {
   const { t: translate } = useTranslation();
   const {
     control,
     formState: { errors },
-  } = useFormContext();
+  } = useFormContext<HasFilledFormFieldsProps>();
   const { currentCurrency } = useTipContext();
   const currencySymbol = getCurrencySymbol(currentCurrency);
 

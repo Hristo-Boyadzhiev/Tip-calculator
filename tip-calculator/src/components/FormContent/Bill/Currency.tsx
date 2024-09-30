@@ -7,13 +7,14 @@ import getCurrencies from "../../../utils/getCurrencies";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTipContext } from "../../../hooks/useTipContext";
 import { useTranslation } from "react-i18next";
+import { HasFilledFormFieldsProps } from "@/interfaces/HasFilledFormFieldsProps";
 
 export default function Currency() {
   const { t: translate } = useTranslation();
   const {
     control,
     formState: { errors },
-  } = useFormContext();
+  } = useFormContext<HasFilledFormFieldsProps>();
 
   const { setCurrentCurrency } = useTipContext();
   const currencies = getCurrencies();

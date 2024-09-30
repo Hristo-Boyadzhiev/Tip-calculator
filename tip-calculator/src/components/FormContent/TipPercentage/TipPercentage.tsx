@@ -9,13 +9,14 @@ import {
 import PercentIcon from "@mui/icons-material/Percent";
 import { Controller, useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
+import { HasFilledFormFieldsProps } from "@/interfaces/HasFilledFormFieldsProps";
 
 export default function TipPercentage() {
   const { t: translate } = useTranslation();
   const {
     control,
     formState: { errors },
-  } = useFormContext();
+  } = useFormContext<HasFilledFormFieldsProps>();
 
   return (
     <Box
