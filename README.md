@@ -81,6 +81,7 @@ The bill amount, tip percentage, and number of people must be numbers greater th
 **iPhone SE(375x667px)**
 
 #### Тip calculator form 
+<a id="mobile-tip-calculator"></a>
 
 In light mode:
 
