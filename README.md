@@ -9,7 +9,7 @@ I have changed the design and added functionalities to the application.
 - [Overview](#overview)
  - [Screenshots](#screenshots)
     - [Desktop version in English](#desktop-version-in-english)
-    - [Mobile version in German](#mobile-version-in-german-(iPhone SE(375x667px))
+    - [Mobile version in German](#mobile-version-in-german)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
