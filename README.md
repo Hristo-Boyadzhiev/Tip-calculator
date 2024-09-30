@@ -39,6 +39,8 @@ In dark mode:
 ![image](https://github.com/user-attachments/assets/ec465fd0-1e44-493b-b6db-423523e2bef2)
 
 #### Desktop version in English
+
+
 Тip calculator form in light mode:
 
 ![image](https://github.com/user-attachments/assets/ea4932b7-46c9-48e4-88ab-ccf36402c64d)
@@ -66,8 +68,8 @@ The bill amount, tip percentage, and number of people must be numbers greater th
 ![image](https://github.com/user-attachments/assets/39ba1de9-7dfa-4302-ba8d-1f07122a7142)
 
 #### Mobile version in German
+**iPhone SE(375x667px)**
 
-iPhone SE(375x667px)
 
 Тip calculator form in light mode:
 
