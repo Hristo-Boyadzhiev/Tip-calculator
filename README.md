@@ -15,6 +15,9 @@ I have changed the design and added functionalities to the application.
        - [Result after clicking 'Calculate'](#result-after-clicking-calculate)
        - [Form validation](#form-validation)
     - [Mobile version in German](#mobile-version-in-german)
+       - [Tip calculator](#tip-calculator)
+       - [Result after clicking 'Calculate'](#result-after-clicking-calculate)
+       - [Form validation](#form-validation)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -77,23 +80,29 @@ The bill amount, tip percentage, and number of people must be numbers greater th
 #### Mobile version in German
 **iPhone SE(375x667px)**
 
-Тip calculator form in light mode:
+#### Тip calculator form 
+
+In light mode:
 
 ![image](https://github.com/user-attachments/assets/46b14285-c51e-4d30-92b4-4d3d659e16a6)
 
-Тip calculator form in dark mode:
+In dark mode:
 
 ![image](https://github.com/user-attachments/assets/924d7ea3-7b37-4817-be17-5aec65530860)
 
-Result after clicking 'Calculate' in light mode:
+#### Result after clicking 'Calculate' 
+
+In light mode:
 
 ![image](https://github.com/user-attachments/assets/b6499337-20c5-4c5b-9958-a00df04f03b7)
 
-Result after clicking 'Calculate' in dark mode:
+In dark mode:
 
 ![image](https://github.com/user-attachments/assets/3daf3201-4629-4a8c-86e0-88c4fe151ff5)
 
-Form validation in dark mode:
+Form validation 
+**in dark mode**
+
 All fields in the form are required:
 
 ![image](https://github.com/user-attachments/assets/da0326ed-1910-4193-adf6-aaae2920207c)
