@@ -58,6 +58,7 @@ In dark mode:
 ![image](https://github.com/user-attachments/assets/04e70840-75d1-409b-8f3e-79b1ba4da298)
 
 #### Result after clicking 'Calculate' 
+<a id="desktop-result-after-clicking-calculate"></a>
 
 In light mode:
 
@@ -68,6 +69,7 @@ In dark mode:
 ![image](https://github.com/user-attachments/assets/eaedae1f-d680-4bcd-9c5e-3261fa09a057)
 
 #### Form validation 
+<a id="desktop-form-validation"></a>
 **In dark mode**
 
 All fields in the form are required:
@@ -82,6 +84,7 @@ The bill amount, tip percentage, and number of people must be numbers greater th
 **iPhone SE(375x667px)**
 
 #### Тip calculator form 
+<a id="mobile-tip-calculator"></a>
 
 In light mode:
 
@@ -92,6 +95,7 @@ In dark mode:
 ![image](https://github.com/user-attachments/assets/924d7ea3-7b37-4817-be17-5aec65530860)
 
 #### Result after clicking 'Calculate' 
+<a id="mobile-result-after-clicking-calculate"></a>
 
 In light mode:
 
@@ -102,6 +106,7 @@ In dark mode:
 ![image](https://github.com/user-attachments/assets/3daf3201-4629-4a8c-86e0-88c4fe151ff5)
 
 Form validation 
+<a id="mobile-form-validation"></a>
 **in dark mode**
 
 All fields in the form are required:
