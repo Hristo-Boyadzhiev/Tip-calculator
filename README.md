@@ -19,7 +19,7 @@ I have changed the design and added functionalities to the application.
         - [Tip calculator](#mobile-tip-calculator)
         - [Result after clicking 'Calculate'](#mobile-result-after-clicking-calculate)
         - [Form validation](#mobile-form-validation)
-    - [Dark version](#light-version)
+    - [Dark version](#dark-version)
       - [Desktop version in English](#desktop-version-in-english)
         - [Tip calculator](#desktop-tip-calculator)
         - [Result after clicking 'Calculate'](#desktop-result-after-clicking-calculate)
@@ -55,7 +55,37 @@ In dark mode:
 
 ![image](https://github.com/user-attachments/assets/ec465fd0-1e44-493b-b6db-423523e2bef2)
 
+### Light version
+
 #### Desktop version in English
+
+##### Tip calculator
+
+![image](https://github.com/user-attachments/assets/ea4932b7-46c9-48e4-88ab-ccf36402c64d)
+
+##### Result after clicking 'Calculate'
+##### Form validation 
+
+#### Mobile version in German
+##### Tip calculator
+##### Result after clicking 'Calculate'
+##### Form validation 
+
+### Dark version
+
+#### Desktop version in English
+
+##### Tip calculator
+
+![image](https://github.com/user-attachments/assets/04e70840-75d1-409b-8f3e-79b1ba4da298)
+
+##### Result after clicking 'Calculate'
+##### Form validation 
+
+#### Mobile version in German
+##### Tip calculator
+##### Result after clicking 'Calculate'
+##### Form validation 
 
 #### Tip calculator
 <a id="desktop-tip-calculator"></a>
@@ -79,7 +109,7 @@ In dark mode:
 
 ![image](https://github.com/user-attachments/assets/eaedae1f-d680-4bcd-9c5e-3261fa09a057)
 
-#### Form validation 
+##### Form validation 
 <a id="desktop-form-validation"></a>
 **In dark mode**
 
