@@ -7,7 +7,7 @@ I have changed the design and added functionalities to the application.
 ## Table of contents
 
 - [Overview](#overview)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -20,7 +20,7 @@ I have changed the design and added functionalities to the application.
 ## Overview
 SPA application with responsive design, developed using React and TypeScript, for calculating the tip and the total bill per person, offering light and dark modes, as well as support for 6 different languages. 
 
-### Screenshot
+### Screenshots
 
 Available currencies in dark mode:
 
