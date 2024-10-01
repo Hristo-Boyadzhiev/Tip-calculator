@@ -149,13 +149,13 @@ The bill amount, tip percentage, and number of people must be numbers greater th
 
 ## Tech Stack
 
-**Build Tool:**
+### Build Tool
 - Vite
 
-**Language:**
+### Language
 - TypeScript
 
-**Library:**
+### Libraries
 - React;
 - Material UI for build the application;
 - React-hook-form for managing forms;
