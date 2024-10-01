@@ -149,6 +149,9 @@ The bill amount, tip percentage, and number of people must be numbers greater th
 
 ## Tech Stack
 
+**Build Tool:**
+- Vite
+
 **Language:**
 - TypeScript
 
