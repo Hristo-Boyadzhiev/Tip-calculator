@@ -59,6 +59,7 @@ In dark mode:
 ### Light version
 
 #### Desktop version in English
+<a id="#desktop-light-version-in-english"></a>
 
 ##### Form
 ![image](https://github.com/user-attachments/assets/ea4932b7-46c9-48e4-88ab-ccf36402c64d)
