@@ -131,7 +131,7 @@ The bill amount, tip percentage, and number of people must be numbers greater th
 <a id="mobile-dark-version-in-german"></a>
 
 ##### Form
-<a id="#mobile-dark-form"></a>
+<a id="mobile-dark-form"></a>
 
 ![image](https://github.com/user-attachments/assets/924d7ea3-7b37-4817-be17-5aec65530860)
 ##### Form validation
