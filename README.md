@@ -64,6 +64,14 @@ In dark mode:
 ![image](https://github.com/user-attachments/assets/ea4932b7-46c9-48e4-88ab-ccf36402c64d)
 
 ##### Form validation 
+All fields in the form are required:
+
+![image](https://github.com/user-attachments/assets/10e15cd4-5572-4d68-a8fa-a747af9ed04f)
+
+The bill amount, tip percentage, and number of people must be numbers greater than 1:
+
+![image](https://github.com/user-attachments/assets/b616c486-db7f-4717-9fd0-0f2abe31a419)
+
 ##### Result after clicking 'Calculate'
 ![image](https://github.com/user-attachments/assets/2e031f6d-e408-4233-a8d0-6fd637da2752)
 
@@ -71,6 +79,14 @@ In dark mode:
 ##### Form
 ![image](https://github.com/user-attachments/assets/46b14285-c51e-4d30-92b4-4d3d659e16a6)
 ##### Form validation 
+All fields in the form are required:
+
+![image](https://github.com/user-attachments/assets/3f9eaaf2-32b7-4380-ac29-753fb09802c4)
+
+The bill amount, tip percentage, and number of people must be numbers greater than 1:
+
+![image](https://github.com/user-attachments/assets/dfcd1def-a841-4300-b499-7a49575453e2)
+
 ##### Result after clicking 'Calculate'
 ![image](https://github.com/user-attachments/assets/b6499337-20c5-4c5b-9958-a00df04f03b7)
 
