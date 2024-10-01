@@ -87,7 +87,7 @@ The bill amount, tip percentage, and number of people must be numbers greater th
 
 All fields in the form are required:
 
-![image](https://github.com/user-attachments/assets/d7d6b4d4-eb0c-40db-ae92-e6bd9036ba71)
+![image](https://github.com/user-attachments/assets/791d45a0-04b2-43e8-a025-8e758dbbf360)
 
 The bill amount, tip percentage, and number of people must be numbers greater than 1:
 
@@ -130,7 +130,7 @@ The bill amount, tip percentage, and number of people must be numbers greater th
 ##### Form
 <a id="mobile-dark-form"></a>
 
-![image](https://github.com/user-attachments/assets/924d7ea3-7b37-4817-be17-5aec65530860)
+![image](https://github.com/user-attachments/assets/a7b75ce4-6590-4c4e-bae7-dcb076845210)
 ##### Form validation
 <a id="mobile-dark-form-validation"></a>
 
@@ -140,7 +140,7 @@ All fields in the form are required:
 
 The bill amount, tip percentage, and number of people must be numbers greater than 1:
 
-![image](https://github.com/user-attachments/assets/4e3909db-6ffa-451f-a84e-5b87c5347ebb)
+![image](https://github.com/user-attachments/assets/dfcd1def-a841-4300-b499-7a49575453e2)
 
 ##### Result after clicking 'Calculate' 
 <a id="mobile-dark-result-after-clicking-calculate"></a>
