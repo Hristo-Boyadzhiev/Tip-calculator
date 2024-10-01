@@ -63,10 +63,12 @@ In dark mode:
 
 ##### Form
 <a id="desktop-light-form"></a>
+
 ![image](https://github.com/user-attachments/assets/ea4932b7-46c9-48e4-88ab-ccf36402c64d)
 
 ##### Form validation 
 <a id="desktop-light-form-validation"></a>
+
 All fields in the form are required:
 
 ![image](https://github.com/user-attachments/assets/10e15cd4-5572-4d68-a8fa-a747af9ed04f)
@@ -77,6 +79,7 @@ The bill amount, tip percentage, and number of people must be numbers greater th
 
 ##### Result after clicking 'Calculate'
 <a id="desktop-light-result-after-clicking-calculate"></a>
+
 ![image](https://github.com/user-attachments/assets/2e031f6d-e408-4233-a8d0-6fd637da2752)
 
 #### Mobile version in German
@@ -84,10 +87,12 @@ The bill amount, tip percentage, and number of people must be numbers greater th
 
 ##### Form
 <a id="mobile-light-form"></a>
+
 ![image](https://github.com/user-attachments/assets/46b14285-c51e-4d30-92b4-4d3d659e16a6)
 
 ##### Form validation 
 <a id="mobile-light-form-validation"></a>
+
 All fields in the form are required:
 
 ![image](https://github.com/user-attachments/assets/3f9eaaf2-32b7-4380-ac29-753fb09802c4)
