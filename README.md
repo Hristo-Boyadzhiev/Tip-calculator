@@ -65,7 +65,7 @@ All fields in the form are required:
 
 ![image](https://github.com/user-attachments/assets/10e15cd4-5572-4d68-a8fa-a747af9ed04f)
 
-The bill amount, tip percentage, and number of people must be numbers greater than 1:
+The bill amount, tip percentage, and number of people must be at least 1:
 
 ![image](https://github.com/user-attachments/assets/02956db7-7a92-47ae-876d-29ee58a6a461)
 
@@ -89,7 +89,7 @@ All fields in the form are required:
 
 ![image](https://github.com/user-attachments/assets/791d45a0-04b2-43e8-a025-8e758dbbf360)
 
-The bill amount, tip percentage, and number of people must be numbers greater than 1:
+The bill amount, tip percentage, and number of people must be at least 1:
 
 ![image](https://github.com/user-attachments/assets/dfcd1def-a841-4300-b499-7a49575453e2)
 
@@ -115,7 +115,7 @@ All fields in the form are required:
 
 ![image](https://github.com/user-attachments/assets/53f96679-412b-4529-9d62-3b1ef136cd1e)
 
-The bill amount, tip percentage, and number of people must be numbers greater than 1:
+The bill amount, tip percentage, and number of people must be at least 1:
 
 ![image](https://github.com/user-attachments/assets/957662a2-e342-4267-a937-31205a4cc3fa)
 
@@ -138,7 +138,7 @@ All fields in the form are required:
 
 ![image](https://github.com/user-attachments/assets/90642a9a-ecde-4633-b5e8-cf651541c7b2)
 
-The bill amount, tip percentage, and number of people must be numbers greater than 1:
+The bill amount, tip percentage, and number of people must be at least 1:
 
 ![image](https://github.com/user-attachments/assets/236bdbbb-7245-40a0-8c91-55986c4a1f5f)
 
