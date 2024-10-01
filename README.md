@@ -28,9 +28,6 @@ I have changed the design and added functionalities to the application.
         - [Form](#mobile-dark-form)
         - [Form validation](#mobile-dark-form-validation)
         - [Result after clicking 'Calculate'](#mobile-dark-result-after-clicking-calculate)
-        
-    
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -154,16 +151,6 @@ The bill amount, tip percentage, and number of people must be numbers greater th
 <a id="mobile-dark-result-after-clicking-calculate"></a>
 
 ![image](https://github.com/user-attachments/assets/3daf3201-4629-4a8c-86e0-88c4fe151ff5)
-
-
-
-
-
-
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
