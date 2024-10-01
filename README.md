@@ -157,7 +157,7 @@ The bill amount, tip percentage, and number of people must be numbers greater th
 
 ### Libraries
 - React;
-- Material UI for build the application;
+- Material UI for building the application;
 - React-hook-form for managing forms;
 - Yup for form validation;
 - React i18next for dynamic language switching.
@@ -176,7 +176,7 @@ To start the development server, run:
 ```bash
 npm run dev
 ```
-## Step 4: Open the Application
+### Step 4: Open the Application
 Open your browser and navigate to: 
 **http://localhost:5173/**
 
