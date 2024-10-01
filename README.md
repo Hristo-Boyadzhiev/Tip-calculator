@@ -80,7 +80,7 @@ The bill amount, tip percentage, and number of people must be numbers greater th
 ##### Form
 <a id="mobile-light-form"></a>
 
-![image](https://github.com/user-attachments/assets/a7b75ce4-6590-4c4e-bae7-dcb076845210)
+![image](https://github.com/user-attachments/assets/8e62f9cf-1b55-4902-9553-1d323568c9c5)
 
 ##### Form validation 
 <a id="mobile-light-form-validation"></a>
