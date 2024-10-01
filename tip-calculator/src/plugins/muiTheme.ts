@@ -2,7 +2,7 @@ import { PaletteColor, createTheme } from "@mui/material/styles";
 
 export interface ExtendedTheme extends PaletteColor {
   palette: {
-    mode?: string;
+    mode: "light" | "dark";
     primary: {
       main: string;
       900: string;
@@ -34,10 +34,14 @@ export interface ExtendedTheme extends PaletteColor {
       primary: string;
     };
   };
+  typography: {
+    fontFamily: string;
+  };
 }
 
 export const light = createTheme({
   palette: {
+    mode: "light",
     primary: {
       main: "hsl(183, 100%, 15%)", // Very dark cyan
       900: "hsl(186, 14%, 43%)", // Dark grayish cyan

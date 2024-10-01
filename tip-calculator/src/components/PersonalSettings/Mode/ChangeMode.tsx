@@ -3,9 +3,10 @@ import Brightness7Icon from "@mui/icons-material/Brightness7";
 import { useTheme } from "@mui/material/styles";
 import { useThemeContext } from "../../../hooks/useThemeContext";
 import { Box, IconButton } from "@mui/material";
+import { ExtendedTheme } from "@/plugins/muiTheme";
 
 export default function ChangeMode() {
-  const theme = useTheme();
+  const theme = useTheme<ExtendedTheme>();
   const { toggleColorMode } = useThemeContext();
   return (
     <Box>

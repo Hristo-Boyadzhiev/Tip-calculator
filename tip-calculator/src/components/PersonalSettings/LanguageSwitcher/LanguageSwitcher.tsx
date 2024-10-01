@@ -11,7 +11,6 @@ export default function LanguageSwitcher() {
   const [selectedLanguage, setSelectedLanguage] = React.useState(
     localStorage.getItem("selectedLanguage") || "en"
   );
-  // const languages = getLanguages();
 
   React.useEffect(() => {
     i18n.changeLanguage(selectedLanguage);
