@@ -11,23 +11,23 @@ I have changed the design and added functionalities to the application.
     - [Available currencies](#available-currencies)
     - [Available languages](#available-languages)
     - [Light version](#light-version)
-      - [Desktop version in English](#desktop-version-in-english)
-        - [Form](#desktop-form)
-        - [Form validation](#desktop-form-validation)
-        - [Result after clicking 'Calculate'](#desktop-result-after-clicking-calculate)
-      - [Mobile version in German](#mobile-version-in-german)
-        - [form](#mobile-form)
-        - [Form validation](#mobile-form-validation)
-        - [Result after clicking 'Calculate'](#mobile-result-after-clicking-calculate)
+      - [Desktop version in English](#desktop-light-version-in-english)
+        - [Form](#desktop-light-form)
+        - [Form validation](#desktop-light-form-validation)
+        - [Result after clicking 'Calculate'](#desktop-light-result-after-clicking-calculate)
+      - [Mobile version in German](#mobile-light-version-in-german)
+        - [Form](#mobile-light-form)
+        - [Form validation](#mobile-light-form-validation)
+        - [Result after clicking 'Calculate'](#mobile-light-result-after-clicking-calculate)
     - [Dark version](#dark-version)
-      - [Desktop version in English](#desktop-version-in-english)
-        - [Tip calculator](#desktop-tip-calculator)
-        - [Form validation](#desktop-form-validation)
-        - [Result after clicking 'Calculate'](#desktop-result-after-clicking-calculate)
-      - [Mobile version in German](#mobile-version-in-german)
-        - [Tip calculator](#mobile-tip-calculator)
-        - [Form validation](#mobile-form-validation)
-        - [Result after clicking 'Calculate'](#mobile-result-after-clicking-calculate)
+      - [Desktop version in English](#desktop-dark-version-in-english)
+        - [Form](#desktop-dark-form)
+        - [Form validation](#desktop-dark-form-validation)
+        - [Result after clicking 'Calculate'](#desktop-dark-result-after-clicking-calculate)
+      - [Mobile version in German](#mobile-dark-version-in-german)
+        - [Form](#mobile-dark-form)
+        - [Form validation](#mobile-dark-form-validation)
+        - [Result after clicking 'Calculate'](#mobile-dark-result-after-clicking-calculate)
         
     
   - [Links](#links)
@@ -60,61 +60,27 @@ In dark mode:
 
 #### Desktop version in English
 
-##### Tip calculator
-
+##### Form
 ![image](https://github.com/user-attachments/assets/ea4932b7-46c9-48e4-88ab-ccf36402c64d)
 
-##### Result after clicking 'Calculate'
 ##### Form validation 
+##### Result after clicking 'Calculate'
+![image](https://github.com/user-attachments/assets/2e031f6d-e408-4233-a8d0-6fd637da2752)
 
 #### Mobile version in German
-##### Tip calculator
-##### Result after clicking 'Calculate'
+##### Form
+![image](https://github.com/user-attachments/assets/46b14285-c51e-4d30-92b4-4d3d659e16a6)
 ##### Form validation 
+##### Result after clicking 'Calculate'
+![image](https://github.com/user-attachments/assets/b6499337-20c5-4c5b-9958-a00df04f03b7)
 
 ### Dark version
 
 #### Desktop version in English
 
 ##### Form
-<a id="desktop-form"></a>
-
 ![image](https://github.com/user-attachments/assets/04e70840-75d1-409b-8f3e-79b1ba4da298)
-
-##### Result after clicking 'Calculate'
 ##### Form validation 
-
-#### Mobile version in German
-##### Tip calculator
-##### Result after clicking 'Calculate'
-##### Form validation 
-
-#### Form
-<a id="mobile-form"></a>
-
-In light mode:
-
-![image](https://github.com/user-attachments/assets/ea4932b7-46c9-48e4-88ab-ccf36402c64d)
-
-In dark mode:
-
-![image](https://github.com/user-attachments/assets/04e70840-75d1-409b-8f3e-79b1ba4da298)
-
-#### Result after clicking 'Calculate' 
-<a id="desktop-result-after-clicking-calculate"></a>
-
-In light mode:
-
-![image](https://github.com/user-attachments/assets/2e031f6d-e408-4233-a8d0-6fd637da2752)
-
-In dark mode:
-
-![image](https://github.com/user-attachments/assets/eaedae1f-d680-4bcd-9c5e-3261fa09a057)
-
-##### Form validation 
-<a id="desktop-form-validation"></a>
-**In dark mode**
-
 All fields in the form are required:
 
 ![image](https://github.com/user-attachments/assets/07080769-c2ce-4d9f-b553-d45dc0051587)
@@ -122,36 +88,13 @@ All fields in the form are required:
 The bill amount, tip percentage, and number of people must be numbers greater than 1:
 
 ![image](https://github.com/user-attachments/assets/39ba1de9-7dfa-4302-ba8d-1f07122a7142)
+##### Result after clicking 'Calculate'
+![image](https://github.com/user-attachments/assets/eaedae1f-d680-4bcd-9c5e-3261fa09a057)
 
 #### Mobile version in German
-**iPhone SE(375x667px)**
-
-#### Тip calculator form 
-<a id="mobile-tip-calculator"></a>
-
-In light mode:
-
-![image](https://github.com/user-attachments/assets/46b14285-c51e-4d30-92b4-4d3d659e16a6)
-
-In dark mode:
-
+##### Form
 ![image](https://github.com/user-attachments/assets/924d7ea3-7b37-4817-be17-5aec65530860)
-
-#### Result after clicking 'Calculate' 
-<a id="mobile-result-after-clicking-calculate"></a>
-
-In light mode:
-
-![image](https://github.com/user-attachments/assets/b6499337-20c5-4c5b-9958-a00df04f03b7)
-
-In dark mode:
-
-![image](https://github.com/user-attachments/assets/3daf3201-4629-4a8c-86e0-88c4fe151ff5)
-
-Form validation 
-<a id="mobile-form-validation"></a>
-**in dark mode**
-
+##### Form validation
 All fields in the form are required:
 
 ![image](https://github.com/user-attachments/assets/da0326ed-1910-4193-adf6-aaae2920207c)
@@ -159,6 +102,12 @@ All fields in the form are required:
 The bill amount, tip percentage, and number of people must be numbers greater than 1:
 
 ![image](https://github.com/user-attachments/assets/4e3909db-6ffa-451f-a84e-5b87c5347ebb)
+
+##### Result after clicking 'Calculate' 
+![image](https://github.com/user-attachments/assets/3daf3201-4629-4a8c-86e0-88c4fe151ff5)
+
+
+
 
 
 
