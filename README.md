@@ -80,14 +80,14 @@ The bill amount, tip percentage, and number of people must be numbers greater th
 ##### Form
 <a id="mobile-light-form"></a>
 
-![image](https://github.com/user-attachments/assets/46b14285-c51e-4d30-92b4-4d3d659e16a6)
+![image](https://github.com/user-attachments/assets/a7b75ce4-6590-4c4e-bae7-dcb076845210)
 
 ##### Form validation 
 <a id="mobile-light-form-validation"></a>
 
 All fields in the form are required:
 
-![image](https://github.com/user-attachments/assets/3f9eaaf2-32b7-4380-ac29-753fb09802c4)
+![image](https://github.com/user-attachments/assets/d7d6b4d4-eb0c-40db-ae92-e6bd9036ba71)
 
 The bill amount, tip percentage, and number of people must be numbers greater than 1:
 
