@@ -164,11 +164,11 @@ The bill amount, tip percentage, and number of people must be numbers greater th
 ### Step 2: Install Dependencies
 Run the following command to install the required dependencies:
 
-`npm install`
+```bash npm install```
 ### Step 3: Running the Application
 To start the development server, run:
 
-`npm run dev`
+```bash npm run dev```
 ## Step 4: Open the Application
 Open your browser and navigate to: 
 **http://localhost:5173/**
