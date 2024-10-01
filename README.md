@@ -73,7 +73,7 @@ All fields in the form are required:
 
 The bill amount, tip percentage, and number of people must be numbers greater than 1:
 
-![image](https://github.com/user-attachments/assets/b616c486-db7f-4717-9fd0-0f2abe31a419)
+![image](https://github.com/user-attachments/assets/fb865cea-2fb4-4eb2-a5b9-e3639d4e9729)
 
 ##### Result after clicking 'Calculate'
 <a id="desktop-light-result-after-clicking-calculate"></a>
