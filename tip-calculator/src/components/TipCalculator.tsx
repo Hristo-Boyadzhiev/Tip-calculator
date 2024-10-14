@@ -1,24 +1,8 @@
 import Box from "@mui/material/Box";
-import { FormProvider as RHFProvider, useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
-import { useTipContext } from "../hooks/useTipContext";
-import { TipCalculatorFormData, tipCalculatorSchema } from "../Schemas/Schema";
-import FormContent from "./FormContent/FormContent";
-import Result from "./Result/Result";
-import PersonalSettings from "./PersonalSettings/PersonalSettings";
-import { useIsSmallScreen } from "@/hooks/useIsSmallScreen";
 import Footer from "./Footer/Footer";
+import TipCalculatorContent from "./TipCalculatorContent";
 
 export default function TipCalculator() {
-  const methods = useForm<TipCalculatorFormData>({
-    resolver: yupResolver(tipCalculatorSchema),
-    mode: "onChange", //validation on change
-  });
-
-  const { handleFormSubmit, isShowResult } = useTipContext();
-  const isSmallScreen = useIsSmallScreen();
-
-  //RHFProvider - Global context for react-hook-form methods
   return (
     <Box
       sx={{
@@ -29,46 +13,7 @@ export default function TipCalculator() {
         height: "100vh",
       }}
     >
-      <Box
-        sx={{
-          flex: 1,
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            gap: "2em",
-            backgroundColor: "secondary.main",
-            borderRadius: isSmallScreen ? 0 : "1.5em",
-            padding: "0.5em 2em 2em 2em",
-          }}
-        >
-          <PersonalSettings />
-
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: isSmallScreen ? "column" : "row",
-              gap: "2em",
-            }}
-          >
-            <RHFProvider {...methods}>
-              <Box
-                component="form"
-                onSubmit={methods.handleSubmit(handleFormSubmit)}
-              >
-                <FormContent />
-              </Box>
-            </RHFProvider>
-            {isShowResult && <Result />}
-          </Box>
-        </Box>
-      </Box>
+      <TipCalculatorContent />
       <Footer />
     </Box>
   );
