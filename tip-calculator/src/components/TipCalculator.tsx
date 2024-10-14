@@ -7,6 +7,7 @@ import FormContent from "./FormContent/FormContent";
 import Result from "./Result/Result";
 import PersonalSettings from "./PersonalSettings/PersonalSettings";
 import { useIsSmallScreen } from "@/hooks/useIsSmallScreen";
+import Footer from "./Footer/Footer";
 
 export default function TipCalculator() {
   const methods = useForm<TipCalculatorFormData>({
@@ -23,41 +24,52 @@ export default function TipCalculator() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
+        justifyContent: "space-between",
         alignItems: "center",
         height: "100vh",
       }}
     >
       <Box
         sx={{
+          flex: 1,
           display: "flex",
           flexDirection: "column",
-          gap: "2em",
-          backgroundColor: "secondary.main",
-          borderRadius: isSmallScreen ? 0 : "1.5em",
-          padding: "0.5em 2em 2em 2em",
+          justifyContent: "center",
+          alignItems: "center",
         }}
       >
-        <PersonalSettings />
-
         <Box
           sx={{
             display: "flex",
-            flexDirection: isSmallScreen ? "column" : "row",
+            flexDirection: "column",
             gap: "2em",
+            backgroundColor: "secondary.main",
+            borderRadius: isSmallScreen ? 0 : "1.5em",
+            padding: "0.5em 2em 2em 2em",
           }}
         >
-          <RHFProvider {...methods}>
-            <Box
-              component="form"
-              onSubmit={methods.handleSubmit(handleFormSubmit)}
-            >
-              <FormContent />
-            </Box>
-          </RHFProvider>
-          {isShowResult && <Result />}
+          <PersonalSettings />
+
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: isSmallScreen ? "column" : "row",
+              gap: "2em",
+            }}
+          >
+            <RHFProvider {...methods}>
+              <Box
+                component="form"
+                onSubmit={methods.handleSubmit(handleFormSubmit)}
+              >
+                <FormContent />
+              </Box>
+            </RHFProvider>
+            {isShowResult && <Result />}
+          </Box>
         </Box>
       </Box>
+      <Footer />
     </Box>
   );
 }
