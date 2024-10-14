@@ -29,5 +29,9 @@
       "typeError": "Please fill in the number of people",
       "min": "The number of people must be at least 1"
     }
+  },
+  "footer": {
+    "challenge-by": "Challenge by ", 
+    "coded-by": "Coded by Hristo Boyadzhiev" 
   }
 }

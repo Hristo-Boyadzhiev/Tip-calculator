@@ -29,5 +29,9 @@
       "typeError": "Bitte geben Sie die Anzahl der Personen ein",
       "min": "Die Anzahl der Personen muss mindestens 1 betragen"
     }
-  }
+  },
+  "footer": {
+    "challenge-by": "Herausforderung von ", 
+    "coded-by": "Programmiert von Hristo Boyadzhiev" 
+}
 }

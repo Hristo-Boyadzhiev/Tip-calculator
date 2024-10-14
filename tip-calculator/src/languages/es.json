@@ -29,5 +29,9 @@
       "typeError": "Por favor ingrese el número de personas",
       "min": "El número de personas debe ser al menos 1"
     }
-  }
+  },
+  "footer": {
+    "challenge-by": "Desafío de ", 
+    "coded-by": "Desarrollado por Hristo Boyadzhiev" 
+}
 }
