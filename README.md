@@ -56,23 +56,23 @@ In dark mode:
 ##### Form
 <a id="desktop-light-form"></a>
 
-![image](https://github.com/user-attachments/assets/ea4932b7-46c9-48e4-88ab-ccf36402c64d)
+![image](https://github.com/user-attachments/assets/2fe9648a-2e2a-4aca-8b71-9b2c3ff06db3)
 
 ##### Form validation 
 <a id="desktop-light-form-validation"></a>
 
 All fields in the form are required:
 
-![image](https://github.com/user-attachments/assets/10e15cd4-5572-4d68-a8fa-a747af9ed04f)
+![image](https://github.com/user-attachments/assets/fb546393-88a7-4c33-897b-be10f3ce33c9)
 
 The bill amount, tip percentage, and number of people must be at least 1:
 
-![image](https://github.com/user-attachments/assets/02956db7-7a92-47ae-876d-29ee58a6a461)
+![image](https://github.com/user-attachments/assets/7447c7d3-c157-47ef-835d-ad6ab873e10d)
 
 ##### Result after clicking 'Calculate'
 <a id="desktop-light-result-after-clicking-calculate"></a>
 
-![image](https://github.com/user-attachments/assets/2e031f6d-e408-4233-a8d0-6fd637da2752)
+![image](https://github.com/user-attachments/assets/46bf0fe0-62ae-4c85-aafc-d0ade5d4afeb)
 
 #### Mobile version in German
 <a id="mobile-light-version-in-german"></a>
@@ -80,23 +80,23 @@ The bill amount, tip percentage, and number of people must be at least 1:
 ##### Form
 <a id="mobile-light-form"></a>
 
-![image](https://github.com/user-attachments/assets/8e62f9cf-1b55-4902-9553-1d323568c9c5)
+![image](https://github.com/user-attachments/assets/17155900-ed55-4d9d-a06a-423849fbedfc)
 
 ##### Form validation 
 <a id="mobile-light-form-validation"></a>
 
 All fields in the form are required:
 
-![image](https://github.com/user-attachments/assets/791d45a0-04b2-43e8-a025-8e758dbbf360)
+![image](https://github.com/user-attachments/assets/19380ebe-b586-4178-b706-6c63842b0cf7)
 
 The bill amount, tip percentage, and number of people must be at least 1:
 
-![image](https://github.com/user-attachments/assets/dfcd1def-a841-4300-b499-7a49575453e2)
+![image](https://github.com/user-attachments/assets/ad1e19c6-3947-423b-88ec-b57d6bf7e86d)
 
 ##### Result after clicking 'Calculate'
 <a id="mobile-light-result-after-clicking-calculate"></a>
 
-![image](https://github.com/user-attachments/assets/b6499337-20c5-4c5b-9958-a00df04f03b7)
+![image](https://github.com/user-attachments/assets/d11b50a4-7834-452d-82de-e405f30235de)
 
 ### Dark version
 
@@ -106,23 +106,23 @@ The bill amount, tip percentage, and number of people must be at least 1:
 ##### Form
 <a id="desktop-dark-form"></a>
 
-![image](https://github.com/user-attachments/assets/04e70840-75d1-409b-8f3e-79b1ba4da298)
+![image](https://github.com/user-attachments/assets/75cee22c-4355-4c1f-8650-74d21a0c749c)
 
 ##### Form validation 
 <a id="desktop-dark-form-validation"></a>
 
 All fields in the form are required:
 
-![image](https://github.com/user-attachments/assets/53f96679-412b-4529-9d62-3b1ef136cd1e)
+![image](https://github.com/user-attachments/assets/d0d0ebf5-c45f-43e7-8331-29dbe4c40617)
 
 The bill amount, tip percentage, and number of people must be at least 1:
 
-![image](https://github.com/user-attachments/assets/957662a2-e342-4267-a937-31205a4cc3fa)
+![image](https://github.com/user-attachments/assets/69d03c4a-69d4-4cfe-9436-b5240247e620)
 
 ##### Result after clicking 'Calculate'
 <a id="desktop-dark-result-after-clicking-calculate"></a>
 
-![image](https://github.com/user-attachments/assets/eaedae1f-d680-4bcd-9c5e-3261fa09a057)
+![image](https://github.com/user-attachments/assets/ff3cc934-1796-47d9-9c10-060df9ad911b)
 
 #### Mobile version in German
 <a id="mobile-dark-version-in-german"></a>
@@ -130,22 +130,23 @@ The bill amount, tip percentage, and number of people must be at least 1:
 ##### Form
 <a id="mobile-dark-form"></a>
 
-![image](https://github.com/user-attachments/assets/a7b75ce4-6590-4c4e-bae7-dcb076845210)
+![image](https://github.com/user-attachments/assets/f6bf7258-261c-49a9-a374-5bb9cea18701)
+
 ##### Form validation
 <a id="mobile-dark-form-validation"></a>
 
 All fields in the form are required:
 
-![image](https://github.com/user-attachments/assets/90642a9a-ecde-4633-b5e8-cf651541c7b2)
+![image](https://github.com/user-attachments/assets/20d5b57b-6655-45e0-8993-475893fd3f86)
 
 The bill amount, tip percentage, and number of people must be at least 1:
 
-![image](https://github.com/user-attachments/assets/236bdbbb-7245-40a0-8c91-55986c4a1f5f)
+![image](https://github.com/user-attachments/assets/7764ce7f-8ddf-4669-a6fa-1ff9a98e6a35)
 
 ##### Result after clicking 'Calculate' 
 <a id="mobile-dark-result-after-clicking-calculate"></a>
 
-![image](https://github.com/user-attachments/assets/3daf3201-4629-4a8c-86e0-88c4fe151ff5)
+![image](https://github.com/user-attachments/assets/938d1b0d-b0d2-46b4-9692-560ea716774e)
 
 ## Tech Stack
 
