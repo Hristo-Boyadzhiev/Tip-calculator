@@ -106,7 +106,7 @@ The bill amount, tip percentage, and number of people must be at least 1:
 ##### Form
 <a id="desktop-dark-form"></a>
 
-![image](https://github.com/user-attachments/assets/64db68e0-85af-4dc7-87f1-eff2f3792abf)
+![image](https://github.com/user-attachments/assets/75cee22c-4355-4c1f-8650-74d21a0c749c)
 
 ##### Form validation 
 <a id="desktop-dark-form-validation"></a>
