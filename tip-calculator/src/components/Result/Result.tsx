@@ -3,9 +3,11 @@ import { useTipContext } from "../../hooks/useTipContext";
 import getCurrencySymbol from "../../utils/getCurrencySymbol";
 import { useThemeContext } from "../../hooks/useThemeContext";
 import { useTranslation } from "react-i18next";
+import { useIsSmallScreen } from "@/hooks/useIsSmallScreen";
 
 export default function Result() {
   const { t: translate } = useTranslation();
+  const isSmallScreen = useIsSmallScreen();
   const { currentCurrency, tipPerPerson, totalPerPerson } = useTipContext();
   const currencySymbol = getCurrencySymbol(currentCurrency);
   const { mode } = useThemeContext();
@@ -15,7 +17,7 @@ export default function Result() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        gap: "3em",
+        gap: isSmallScreen ? "1em" : "3em",
         borderRadius: "1.5em",
         padding: "1em",
         backgroundColor: "primary.main",

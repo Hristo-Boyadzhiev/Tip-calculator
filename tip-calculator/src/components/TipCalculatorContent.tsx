@@ -32,7 +32,7 @@ export default function TipCalculatorContent() {
         sx={{
           display: "flex",
           flexDirection: "column",
-          gap: "2em",
+          gap: isSmallScreen ? 0 : "2em",
           backgroundColor: "secondary.main",
           borderRadius: isSmallScreen ? 0 : "1.5em",
           padding: "0.5em 2em 2em 2em",
