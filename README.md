@@ -29,6 +29,7 @@ I have changed the design and added functionalities to the application.
         - [Form validation](#mobile-dark-form-validation)
         - [Result after clicking 'Calculate'](#mobile-dark-result-after-clicking-calculate)
 - [Tech Stack](#tech-stack)
+- [License](#license)
 - [Installation and Usage](#installation-and-usage)
 
 ## Overview
